@@ -1,0 +1,374 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "https://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="https://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+<title>TestNG Report</title>
+<style type="text/css">table {margin-bottom:10px;border-collapse:collapse;empty-cells:show}th,td {border:1px solid #009;padding:.25em .5em}th {vertical-align:bottom}td {vertical-align:top}table a {font-weight:bold}.stripe td {background-color: #E6EBF9}.num {text-align:right}.passedodd td {background-color: #3F3}.passedeven td {background-color: #0A0}.skippedodd td {background-color: #DDD}.skippedeven td {background-color: #CCC}.failedodd td,.attn {background-color: #F33}.failedeven td,.stripe .attn {background-color: #D00}.stacktrace {white-space:pre;font-family:monospace}.totop {font-size:85%;text-align:center;border-bottom:2px solid #000}.invisible {display:none}</style>
+</head>
+<body>
+<table>
+<tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
+<tr><th colspan="8">Barcodes_TestNG session</th></tr>
+<tr><td><a href="#t0">DemoTests</a></td><td class="num">7</td><td class="num">0</td><td class="num">0</td><td class="num attn">7</td><td class="num">1,235,097</td><td></td><td></td></tr>
+</table>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Barcodes_TestNG session</th></tr></tbody><tbody id="t0"><tr><th colspan="4">DemoTests &#8212; failed</th></tr><tr class="failedeven"><td rowspan="7">TestCases.CompleteTestCases</td><td><a href="#m0">reVerifyRecordsByManager01</a></td><td rowspan="1">1622542844612</td><td rowspan="1">78508</td></tr><tr class="failedeven"><td><a href="#m1">reVerifyRecordsByManager02</a></td><td rowspan="1">1622542941158</td><td rowspan="1">78611</td></tr><tr class="failedeven"><td><a href="#m2">reVerifyRecordsByManager03</a></td><td rowspan="1">1622543039939</td><td rowspan="1">78176</td></tr><tr class="failedeven"><td><a href="#m3">verifyRecordsByManager01</a></td><td rowspan="1">1622542459486</td><td rowspan="1">96547</td></tr><tr class="failedeven"><td><a href="#m4">verifyRecordsByManager04</a></td><td rowspan="1">1622543137602</td><td rowspan="1">79540</td></tr><tr class="failedeven"><td><a href="#m5">verifyRecordsByManager05</a></td><td rowspan="1">1622542747307</td><td rowspan="1">79336</td></tr><tr class="failedeven"><td><a href="#m6">verifyRecordsBySpecialist04</a></td><td rowspan="1">1622542283105</td><td rowspan="1">93900</td></tr><tr><th colspan="4">DemoTests &#8212; passed</th></tr><tr class="passedeven"><td rowspan="7">TestCases.CompleteTestCases</td><td><a href="#m7">verifyLogin</a></td><td rowspan="1">1622542008377</td><td rowspan="1">24147</td></tr><tr class="passedeven"><td><a href="#m8">verifyRecordsByManager02</a></td><td rowspan="1">1622542575178</td><td rowspan="1">68974</td></tr><tr class="passedeven"><td><a href="#m9">verifyRecordsByManager03</a></td><td rowspan="1">1622542663321</td><td rowspan="1">64989</td></tr><tr class="passedeven"><td><a href="#m10">verifyRecordsBySpecialist02</a></td><td rowspan="1">1622542156283</td><td rowspan="1">45336</td></tr><tr class="passedeven"><td><a href="#m11">verifyRecordsBySpecialist03</a></td><td rowspan="1">1622542221283</td><td rowspan="1">42291</td></tr><tr class="passedeven"><td><a href="#m12">verifyRecordsBySpecialist05</a></td><td rowspan="1">1622542395701</td><td rowspan="1">44619</td></tr><tr class="passedeven"><td><a href="#m13">verifyRecordsStats</a></td><td rowspan="1">1622542052141</td><td rowspan="1">85641</td></tr></tbody>
+</table>
+<h2>DemoTests</h2><h3 id="m0">TestCases.CompleteTestCases#reVerifyRecordsByManager01</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator &apos;By.id: co.nayan.c3specialist_v2.qa_new:id/falseBtn&apos; (tried for 30 second(s) with 55 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at commons.ExplicitWait.waitFor(ExplicitWait.java:167)
+	at commons.ExplicitWait.forElementToBeVisible(ExplicitWait.java:81)
+	at commons.ExplicitWait.forElementToBeVisible(ExplicitWait.java:65)
+	at pages.QuestionnairePage.clickOnFalse(QuestionnairePage.java:99)
+	at pages.QuestionnairePage.managersReValidation(QuestionnairePage.java:199)
+	at TestCases.CompleteTestCases.reVerifyRecordsByManager01(CompleteTestCases.java:161)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+Caused by: org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-K9EHMR9&apos;, ip: &apos;192.168.0.144&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_172&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {app: C:\Users\Admin\Desktop\Apps..., appActivity: co.nayan.c3specialist_v2.Sp..., appPackage: co.nayan.c3specialist_v2.qa..., databaseEnabled: false, desired: {app: C:\Users\Admin\Desktop\Apps..., appActivity: co.nayan.c3specialist_v2.Sp..., appPackage: co.nayan.c3specialist_v2.qa..., deviceName: Redmi6, newCommandTimeout: 30, platformName: android, version: 9.0}, deviceApiLevel: 28, deviceManufacturer: Xiaomi, deviceModel: Redmi 6, deviceName: 050b0b767d27, deviceScreenDensity: 320, deviceScreenSize: 720x1440, deviceUDID: 050b0b767d27, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, newCommandTimeout: 30, pixelRatio: 2, platform: LINUX, platformName: Android, platformVersion: 9, statBarHeight: 48, takesScreenshot: true, version: 9.0, viewportRect: {height: 1296, left: 0, top: 48, width: 720}, warnings: {}, webStorageEnabled: false}
+Session ID: ffe70742-f653-46de-ada5-69cc4229112d
+*** Element info: {Using=id, value=co.nayan.c3specialist_v2.qa_new:id/falseBtn}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:247)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:61)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:368)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElementById(DefaultGenericMobileDriver.java:69)
+	at io.appium.java_client.AppiumDriver.findElementById(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElementById(AndroidDriver.java:1)
+	at org.openqa.selenium.By$ById.findElement(By.java:188)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy12.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:314)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:43)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:300)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:297)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	... 38 more
+... Removed 34 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">TestCases.CompleteTestCases#reVerifyRecordsByManager02</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator &apos;By.id: co.nayan.c3specialist_v2.qa_new:id/falseBtn&apos; (tried for 30 second(s) with 55 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at commons.ExplicitWait.waitFor(ExplicitWait.java:167)
+	at commons.ExplicitWait.forElementToBeVisible(ExplicitWait.java:81)
+	at commons.ExplicitWait.forElementToBeVisible(ExplicitWait.java:65)
+	at pages.QuestionnairePage.clickOnFalse(QuestionnairePage.java:99)
+	at pages.QuestionnairePage.managersReValidation(QuestionnairePage.java:199)
+	at TestCases.CompleteTestCases.reVerifyRecordsByManager02(CompleteTestCases.java:174)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+Caused by: org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-K9EHMR9&apos;, ip: &apos;192.168.0.144&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_172&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {app: C:\Users\Admin\Desktop\Apps..., appActivity: co.nayan.c3specialist_v2.Sp..., appPackage: co.nayan.c3specialist_v2.qa..., databaseEnabled: false, desired: {app: C:\Users\Admin\Desktop\Apps..., appActivity: co.nayan.c3specialist_v2.Sp..., appPackage: co.nayan.c3specialist_v2.qa..., deviceName: Redmi6, newCommandTimeout: 30, platformName: android, version: 9.0}, deviceApiLevel: 28, deviceManufacturer: Xiaomi, deviceModel: Redmi 6, deviceName: 050b0b767d27, deviceScreenDensity: 320, deviceScreenSize: 720x1440, deviceUDID: 050b0b767d27, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, newCommandTimeout: 30, pixelRatio: 2, platform: LINUX, platformName: Android, platformVersion: 9, statBarHeight: 48, takesScreenshot: true, version: 9.0, viewportRect: {height: 1296, left: 0, top: 48, width: 720}, warnings: {}, webStorageEnabled: false}
+Session ID: 31708415-b8fe-41e6-8f11-9e87910e393b
+*** Element info: {Using=id, value=co.nayan.c3specialist_v2.qa_new:id/falseBtn}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:247)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:61)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:368)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElementById(DefaultGenericMobileDriver.java:69)
+	at io.appium.java_client.AppiumDriver.findElementById(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElementById(AndroidDriver.java:1)
+	at org.openqa.selenium.By$ById.findElement(By.java:188)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy12.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:314)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:43)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:300)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:297)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	... 38 more
+... Removed 34 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">TestCases.CompleteTestCases#reVerifyRecordsByManager03</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator &apos;By.id: co.nayan.c3specialist_v2.qa_new:id/falseBtn&apos; (tried for 30 second(s) with 55 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at commons.ExplicitWait.waitFor(ExplicitWait.java:167)
+	at commons.ExplicitWait.forElementToBeVisible(ExplicitWait.java:81)
+	at commons.ExplicitWait.forElementToBeVisible(ExplicitWait.java:65)
+	at pages.QuestionnairePage.clickOnFalse(QuestionnairePage.java:99)
+	at pages.QuestionnairePage.managersReValidation(QuestionnairePage.java:199)
+	at TestCases.CompleteTestCases.reVerifyRecordsByManager03(CompleteTestCases.java:187)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+Caused by: org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-K9EHMR9&apos;, ip: &apos;192.168.0.144&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_172&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {app: C:\Users\Admin\Desktop\Apps..., appActivity: co.nayan.c3specialist_v2.Sp..., appPackage: co.nayan.c3specialist_v2.qa..., databaseEnabled: false, desired: {app: C:\Users\Admin\Desktop\Apps..., appActivity: co.nayan.c3specialist_v2.Sp..., appPackage: co.nayan.c3specialist_v2.qa..., deviceName: Redmi6, newCommandTimeout: 30, platformName: android, version: 9.0}, deviceApiLevel: 28, deviceManufacturer: Xiaomi, deviceModel: Redmi 6, deviceName: 050b0b767d27, deviceScreenDensity: 320, deviceScreenSize: 720x1440, deviceUDID: 050b0b767d27, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, newCommandTimeout: 30, pixelRatio: 2, platform: LINUX, platformName: Android, platformVersion: 9, statBarHeight: 48, takesScreenshot: true, version: 9.0, viewportRect: {height: 1296, left: 0, top: 48, width: 720}, warnings: {}, webStorageEnabled: false}
+Session ID: 2e668d4c-9335-4925-9d36-099e04cc9400
+*** Element info: {Using=id, value=co.nayan.c3specialist_v2.qa_new:id/falseBtn}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:247)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:61)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:368)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElementById(DefaultGenericMobileDriver.java:69)
+	at io.appium.java_client.AppiumDriver.findElementById(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElementById(AndroidDriver.java:1)
+	at org.openqa.selenium.By$ById.findElement(By.java:188)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy12.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:314)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:43)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:300)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:297)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	... 38 more
+... Removed 34 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">TestCases.CompleteTestCases#verifyRecordsByManager01</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator &apos;By.id: co.nayan.c3specialist_v2.qa_new:id/rejectBtn&apos; (tried for 30 second(s) with 55 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at commons.ExplicitWait.waitFor(ExplicitWait.java:167)
+	at commons.ExplicitWait.forElementToBeVisible(ExplicitWait.java:81)
+	at commons.ExplicitWait.forElementToBeVisible(ExplicitWait.java:65)
+	at pages.QuestionnairePage.clickOnReject(QuestionnairePage.java:159)
+	at pages.QuestionnairePage.managerValidation01(QuestionnairePage.java:179)
+	at TestCases.CompleteTestCases.verifyRecordsByManager01(CompleteTestCases.java:109)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+Caused by: org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-K9EHMR9&apos;, ip: &apos;192.168.0.144&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_172&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {app: C:\Users\Admin\Desktop\Apps..., appActivity: co.nayan.c3specialist_v2.Sp..., appPackage: co.nayan.c3specialist_v2.qa..., databaseEnabled: false, desired: {app: C:\Users\Admin\Desktop\Apps..., appActivity: co.nayan.c3specialist_v2.Sp..., appPackage: co.nayan.c3specialist_v2.qa..., deviceName: Redmi6, newCommandTimeout: 30, platformName: android, version: 9.0}, deviceApiLevel: 28, deviceManufacturer: Xiaomi, deviceModel: Redmi 6, deviceName: 050b0b767d27, deviceScreenDensity: 320, deviceScreenSize: 720x1440, deviceUDID: 050b0b767d27, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, newCommandTimeout: 30, pixelRatio: 2, platform: LINUX, platformName: Android, platformVersion: 9, statBarHeight: 48, takesScreenshot: true, version: 9.0, viewportRect: {height: 1296, left: 0, top: 48, width: 720}, warnings: {}, webStorageEnabled: false}
+Session ID: 8e4f2d45-f462-4196-b173-c2cadf88c275
+*** Element info: {Using=id, value=co.nayan.c3specialist_v2.qa_new:id/rejectBtn}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:247)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:61)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:368)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElementById(DefaultGenericMobileDriver.java:69)
+	at io.appium.java_client.AppiumDriver.findElementById(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElementById(AndroidDriver.java:1)
+	at org.openqa.selenium.By$ById.findElement(By.java:188)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy12.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:314)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:43)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:300)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:297)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	... 38 more
+... Removed 34 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">TestCases.CompleteTestCases#verifyRecordsByManager04</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator &apos;By.id: co.nayan.c3specialist_v2.qa_new:id/falseBtn&apos; (tried for 30 second(s) with 55 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at commons.ExplicitWait.waitFor(ExplicitWait.java:167)
+	at commons.ExplicitWait.forElementToBeVisible(ExplicitWait.java:81)
+	at commons.ExplicitWait.forElementToBeVisible(ExplicitWait.java:65)
+	at pages.QuestionnairePage.clickOnFalse(QuestionnairePage.java:99)
+	at pages.QuestionnairePage.managersReValidation(QuestionnairePage.java:199)
+	at TestCases.CompleteTestCases.verifyRecordsByManager04(CompleteTestCases.java:200)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+Caused by: org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-K9EHMR9&apos;, ip: &apos;192.168.0.144&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_172&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {app: C:\Users\Admin\Desktop\Apps..., appActivity: co.nayan.c3specialist_v2.Sp..., appPackage: co.nayan.c3specialist_v2.qa..., databaseEnabled: false, desired: {app: C:\Users\Admin\Desktop\Apps..., appActivity: co.nayan.c3specialist_v2.Sp..., appPackage: co.nayan.c3specialist_v2.qa..., deviceName: Redmi6, newCommandTimeout: 30, platformName: android, version: 9.0}, deviceApiLevel: 28, deviceManufacturer: Xiaomi, deviceModel: Redmi 6, deviceName: 050b0b767d27, deviceScreenDensity: 320, deviceScreenSize: 720x1440, deviceUDID: 050b0b767d27, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, newCommandTimeout: 30, pixelRatio: 2, platform: LINUX, platformName: Android, platformVersion: 9, statBarHeight: 48, takesScreenshot: true, version: 9.0, viewportRect: {height: 1296, left: 0, top: 48, width: 720}, warnings: {}, webStorageEnabled: false}
+Session ID: 8a5848df-bf85-499c-bb84-f205838c41a1
+*** Element info: {Using=id, value=co.nayan.c3specialist_v2.qa_new:id/falseBtn}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:247)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:61)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:368)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElementById(DefaultGenericMobileDriver.java:69)
+	at io.appium.java_client.AppiumDriver.findElementById(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElementById(AndroidDriver.java:1)
+	at org.openqa.selenium.By$ById.findElement(By.java:188)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy12.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:314)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:43)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:300)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:297)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	... 38 more
+... Removed 34 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">TestCases.CompleteTestCases#verifyRecordsByManager05</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator &apos;By.id: co.nayan.c3specialist_v2.qa_new:id/editModeIv&apos; (tried for 30 second(s) with 55 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at commons.ExplicitWait.waitFor(ExplicitWait.java:167)
+	at commons.ExplicitWait.forElementToBeVisible(ExplicitWait.java:81)
+	at commons.ExplicitWait.forElementToBeVisible(ExplicitWait.java:65)
+	at pages.QuestionnairePage.clickOnSelect(QuestionnairePage.java:65)
+	at pages.QuestionnairePage.manager05Validation(QuestionnairePage.java:189)
+	at TestCases.CompleteTestCases.verifyRecordsByManager05(CompleteTestCases.java:148)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+Caused by: org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-K9EHMR9&apos;, ip: &apos;192.168.0.144&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_172&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {app: C:\Users\Admin\Desktop\Apps..., appActivity: co.nayan.c3specialist_v2.Sp..., appPackage: co.nayan.c3specialist_v2.qa..., databaseEnabled: false, desired: {app: C:\Users\Admin\Desktop\Apps..., appActivity: co.nayan.c3specialist_v2.Sp..., appPackage: co.nayan.c3specialist_v2.qa..., deviceName: Redmi6, newCommandTimeout: 30, platformName: android, version: 9.0}, deviceApiLevel: 28, deviceManufacturer: Xiaomi, deviceModel: Redmi 6, deviceName: 050b0b767d27, deviceScreenDensity: 320, deviceScreenSize: 720x1440, deviceUDID: 050b0b767d27, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, newCommandTimeout: 30, pixelRatio: 2, platform: LINUX, platformName: Android, platformVersion: 9, statBarHeight: 48, takesScreenshot: true, version: 9.0, viewportRect: {height: 1296, left: 0, top: 48, width: 720}, warnings: {}, webStorageEnabled: false}
+Session ID: b02e5373-0bd3-4f48-804b-c225a7bc5964
+*** Element info: {Using=id, value=co.nayan.c3specialist_v2.qa_new:id/editModeIv}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:247)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:61)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:368)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElementById(DefaultGenericMobileDriver.java:69)
+	at io.appium.java_client.AppiumDriver.findElementById(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElementById(AndroidDriver.java:1)
+	at org.openqa.selenium.By$ById.findElement(By.java:188)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy12.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:314)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:43)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:300)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:297)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	... 38 more
+... Removed 34 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">TestCases.CompleteTestCases#verifyRecordsBySpecialist04</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator &apos;By.id: co.nayan.c3specialist_v2.qa_new:id/positiveBtn&apos; (tried for 30 second(s) with 55 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at commons.ExplicitWait.waitFor(ExplicitWait.java:167)
+	at commons.ExplicitWait.forElementToBeVisible(ExplicitWait.java:81)
+	at commons.ExplicitWait.forElementToBeVisible(ExplicitWait.java:65)
+	at pages.QuestionnairePage.clickOnOkAlert(QuestionnairePage.java:105)
+	at pages.QuestionnairePage.specialist04Verification(QuestionnairePage.java:127)
+	at TestCases.CompleteTestCases.verifyRecordsBySpecialist04(CompleteTestCases.java:83)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+Caused by: org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-K9EHMR9&apos;, ip: &apos;192.168.0.144&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_172&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {app: C:\Users\Admin\Desktop\Apps..., appActivity: co.nayan.c3specialist_v2.Sp..., appPackage: co.nayan.c3specialist_v2.qa..., databaseEnabled: false, desired: {app: C:\Users\Admin\Desktop\Apps..., appActivity: co.nayan.c3specialist_v2.Sp..., appPackage: co.nayan.c3specialist_v2.qa..., deviceName: Redmi6, newCommandTimeout: 30, platformName: android, version: 9.0}, deviceApiLevel: 28, deviceManufacturer: Xiaomi, deviceModel: Redmi 6, deviceName: 050b0b767d27, deviceScreenDensity: 320, deviceScreenSize: 720x1440, deviceUDID: 050b0b767d27, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, newCommandTimeout: 30, pixelRatio: 2, platform: LINUX, platformName: Android, platformVersion: 9, statBarHeight: 48, takesScreenshot: true, version: 9.0, viewportRect: {height: 1296, left: 0, top: 48, width: 720}, warnings: {}, webStorageEnabled: false}
+Session ID: e66de7e3-091f-4e1c-906f-3d0069ee80a5
+*** Element info: {Using=id, value=co.nayan.c3specialist_v2.qa_new:id/positiveBtn}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:247)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:61)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:368)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElementById(DefaultGenericMobileDriver.java:69)
+	at io.appium.java_client.AppiumDriver.findElementById(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElementById(AndroidDriver.java:1)
+	at org.openqa.selenium.By$ById.findElement(By.java:188)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy12.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:314)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:43)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:300)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:297)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	... 38 more
+... Removed 34 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m7">TestCases.CompleteTestCases#verifyLogin</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m8">TestCases.CompleteTestCases#verifyRecordsByManager02</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m9">TestCases.CompleteTestCases#verifyRecordsByManager03</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m10">TestCases.CompleteTestCases#verifyRecordsBySpecialist02</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m11">TestCases.CompleteTestCases#verifyRecordsBySpecialist03</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m12">TestCases.CompleteTestCases#verifyRecordsBySpecialist05</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m13">TestCases.CompleteTestCases#verifyRecordsStats</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+</body>
+</html>

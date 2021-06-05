@@ -1,0 +1,483 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TestSuite" time="1,238.467" tests="14" errors="0" skipped="0" failures="7">
+  <properties>
+    <property name="sun.desktop" value="windows"/>
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.class.path" value="C:\Users\Admin\Desktop\AppsIerra\Appium_Framework\target\test-classes;C:\Users\Admin\Desktop\AppsIerra\Appium_Framework\target\classes;C:\Users\Admin\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\3.141.59\selenium-firefox-driver-3.141.59.jar;C:\Users\Admin\.m2\repository\org\seleniumhq\selenium\selenium-api\3.141.59\selenium-api-3.141.59.jar;C:\Users\Admin\.m2\repository\net\bytebuddy\byte-buddy\1.8.15\byte-buddy-1.8.15.jar;C:\Users\Admin\.m2\repository\org\apache\commons\commons-exec\1.3\commons-exec-1.3.jar;C:\Users\Admin\.m2\repository\com\google\guava\guava\25.0-jre\guava-25.0-jre.jar;C:\Users\Admin\.m2\repository\com\google\code\findbugs\jsr305\1.3.9\jsr305-1.3.9.jar;C:\Users\Admin\.m2\repository\org\checkerframework\checker-compat-qual\2.0.0\checker-compat-qual-2.0.0.jar;C:\Users\Admin\.m2\repository\com\google\errorprone\error_prone_annotations\2.1.3\error_prone_annotations-2.1.3.jar;C:\Users\Admin\.m2\repository\com\google\j2objc\j2objc-annotations\1.1\j2objc-annotations-1.1.jar;C:\Users\Admin\.m2\repository\org\codehaus\mojo\animal-sniffer-annotations\1.14\animal-sniffer-annotations-1.14.jar;C:\Users\Admin\.m2\repository\com\squareup\okhttp3\okhttp\3.11.0\okhttp-3.11.0.jar;C:\Users\Admin\.m2\repository\com\squareup\okio\okio\1.14.0\okio-1.14.0.jar;C:\Users\Admin\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\3.14.0\selenium-remote-driver-3.14.0.jar;C:\Users\Admin\.m2\repository\commons-codec\commons-codec\1.10\commons-codec-1.10.jar;C:\Users\Admin\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\Admin\.m2\repository\org\apache\httpcomponents\httpclient\4.5.5\httpclient-4.5.5.jar;C:\Users\Admin\.m2\repository\org\apache\httpcomponents\httpcore\4.4.9\httpcore-4.4.9.jar;C:\Users\Admin\.m2\repository\org\seleniumhq\selenium\selenium-java\3.141.59\selenium-java-3.141.59.jar;C:\Users\Admin\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\3.141.59\selenium-chrome-driver-3.141.59.jar;C:\Users\Admin\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\3.141.59\selenium-edge-driver-3.141.59.jar;C:\Users\Admin\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\3.141.59\selenium-ie-driver-3.141.59.jar;C:\Users\Admin\.m2\repository\org\seleniumhq\selenium\selenium-opera-driver\3.141.59\selenium-opera-driver-3.141.59.jar;C:\Users\Admin\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\3.141.59\selenium-safari-driver-3.141.59.jar;C:\Users\Admin\.m2\repository\org\seleniumhq\selenium\selenium-support\3.141.59\selenium-support-3.141.59.jar;C:\Users\Admin\.m2\repository\io\appium\java-client\7.4.1\java-client-7.4.1.jar;C:\Users\Admin\.m2\repository\com\google\code\gson\gson\2.8.6\gson-2.8.6.jar;C:\Users\Admin\.m2\repository\cglib\cglib\3.3.0\cglib-3.3.0.jar;C:\Users\Admin\.m2\repository\org\ow2\asm\asm\7.1\asm-7.1.jar;C:\Users\Admin\.m2\repository\commons-validator\commons-validator\1.7\commons-validator-1.7.jar;C:\Users\Admin\.m2\repository\commons-beanutils\commons-beanutils\1.9.4\commons-beanutils-1.9.4.jar;C:\Users\Admin\.m2\repository\commons-digester\commons-digester\2.1\commons-digester-2.1.jar;C:\Users\Admin\.m2\repository\commons-collections\commons-collections\3.2.2\commons-collections-3.2.2.jar;C:\Users\Admin\.m2\repository\org\apache\commons\commons-lang3\3.11\commons-lang3-3.11.jar;C:\Users\Admin\.m2\repository\commons-io\commons-io\2.8.0\commons-io-2.8.0.jar;C:\Users\Admin\.m2\repository\org\springframework\spring-context\5.3.1\spring-context-5.3.1.jar;C:\Users\Admin\.m2\repository\org\springframework\spring-aop\5.3.1\spring-aop-5.3.1.jar;C:\Users\Admin\.m2\repository\org\springframework\spring-beans\5.3.1\spring-beans-5.3.1.jar;C:\Users\Admin\.m2\repository\org\springframework\spring-core\5.3.1\spring-core-5.3.1.jar;C:\Users\Admin\.m2\repository\org\springframework\spring-jcl\5.3.1\spring-jcl-5.3.1.jar;C:\Users\Admin\.m2\repository\org\springframework\spring-expression\5.3.1\spring-expression-5.3.1.jar;C:\Users\Admin\.m2\repository\org\aspectj\aspectjweaver\1.9.6\aspectjweaver-1.9.6.jar;C:\Users\Admin\.m2\repository\org\slf4j\slf4j-api\1.7.30\slf4j-api-1.7.30.jar;C:\Users\Admin\.m2\repository\org\testng\testng\7.3.0\testng-7.3.0.jar;C:\Users\Admin\.m2\repository\com\beust\jcommander\1.78\jcommander-1.78.jar;C:\Users\Admin\.m2\repository\org\apache\ant\ant\1.10.3\ant-1.10.3.jar;C:\Users\Admin\.m2\repository\org\apache\ant\ant-launcher\1.10.3\ant-launcher-1.10.3.jar;C:\Users\Admin\.m2\repository\junit\junit\4.12\junit-4.12.jar;C:\Users\Admin\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\Admin\.m2\repository\com\google\inject\guice\4.2.2\guice-4.2.2-no_aop.jar;C:\Users\Admin\.m2\repository\javax\inject\javax.inject\1\javax.inject-1.jar;C:\Users\Admin\.m2\repository\aopalliance\aopalliance\1.0\aopalliance-1.0.jar;C:\Users\Admin\.m2\repository\org\yaml\snakeyaml\1.21\snakeyaml-1.21.jar;C:\Users\Admin\.m2\repository\org\apache\logging\log4j\log4j-core\2.13.1\log4j-core-2.13.1.jar;C:\Users\Admin\.m2\repository\org\apache\logging\log4j\log4j-api\2.13.1\log4j-api-2.13.1.jar;C:\Users\Admin\.m2\repository\com\sun\mail\javax.mail\1.6.2\javax.mail-1.6.2.jar;C:\Users\Admin\.m2\repository\javax\activation\activation\1.1\activation-1.1.jar;C:\Users\Admin\.m2\repository\org\jsoup\jsoup\1.13.1\jsoup-1.13.1.jar;C:\Users\Admin\.m2\repository\io\github\bonigarcia\webdrivermanager\4.2.2\webdrivermanager-4.2.2.jar;C:\Users\Admin\.m2\repository\org\apache\httpcomponents\client5\httpclient5\5.0.1\httpclient5-5.0.1.jar;C:\Users\Admin\.m2\repository\org\apache\httpcomponents\core5\httpcore5\5.0.1\httpcore5-5.0.1.jar;C:\Users\Admin\.m2\repository\org\apache\httpcomponents\core5\httpcore5-h2\5.0.1\httpcore5-h2-5.0.1.jar;C:\Users\Admin\.m2\repository\org\rauschig\jarchivelib\1.1.0\jarchivelib-1.1.0.jar;C:\Users\Admin\.m2\repository\com\relevantcodes\extentreports\2.41.2\extentreports-2.41.2.jar;C:\Users\Admin\.m2\repository\org\xerial\sqlite-jdbc\3.8.11.1\sqlite-jdbc-3.8.11.1.jar;C:\Users\Admin\.m2\repository\org\freemarker\freemarker\2.3.23\freemarker-2.3.23.jar;C:\Users\Admin\.m2\repository\org\mongodb\mongodb-driver\3.0.4\mongodb-driver-3.0.4.jar;C:\Users\Admin\.m2\repository\org\mongodb\bson\3.0.4\bson-3.0.4.jar;C:\Users\Admin\.m2\repository\org\mongodb\mongodb-driver-core\3.0.4\mongodb-driver-core-3.0.4.jar;C:\Users\Admin\.m2\repository\org\jboss\as\plugins\jboss-as-maven-plugin\7.9.Final\jboss-as-maven-plugin-7.9.Final.jar;C:\Users\Admin\.m2\repository\org\apache\commons\commons-compress\1.5\commons-compress-1.5.jar;C:\Users\Admin\.m2\repository\org\tukaani\xz\1.2\xz-1.2.jar;C:\Users\Admin\.m2\repository\org\apache\maven\maven-core\3.0.5\maven-core-3.0.5.jar;C:\Users\Admin\.m2\repository\org\apache\maven\maven-model\3.0.5\maven-model-3.0.5.jar;C:\Users\Admin\.m2\repository\org\apache\maven\maven-repository-metadata\3.0.5\maven-repository-metadata-3.0.5.jar;C:\Users\Admin\.m2\repository\org\apache\maven\maven-artifact\3.0.5\maven-artifact-3.0.5.jar;C:\Users\Admin\.m2\repository\org\apache\maven\maven-model-builder\3.0.5\maven-model-builder-3.0.5.jar;C:\Users\Admin\.m2\repository\org\apache\maven\maven-aether-provider\3.0.5\maven-aether-provider-3.0.5.jar;C:\Users\Admin\.m2\repository\org\sonatype\aether\aether-spi\1.13.1\aether-spi-1.13.1.jar;C:\Users\Admin\.m2\repository\org\sonatype\aether\aether-impl\1.13.1\aether-impl-1.13.1.jar;C:\Users\Admin\.m2\repository\org\sonatype\aether\aether-api\1.13.1\aether-api-1.13.1.jar;C:\Users\Admin\.m2\repository\org\sonatype\aether\aether-util\1.13.1\aether-util-1.13.1.jar;C:\Users\Admin\.m2\repository\org\sonatype\sisu\sisu-inject-plexus\2.3.0\sisu-inject-plexus-2.3.0.jar;C:\Users\Admin\.m2\repository\org\sonatype\sisu\sisu-inject-bean\2.3.0\sisu-inject-bean-2.3.0.jar;C:\Users\Admin\.m2\repository\org\sonatype\sisu\sisu-guice\3.1.0\sisu-guice-3.1.0-no_aop.jar;C:\Users\Admin\.m2\repository\org\sonatype\sisu\sisu-guava\0.9.9\sisu-guava-0.9.9.jar;C:\Users\Admin\.m2\repository\org\codehaus\plexus\plexus-interpolation\1.14\plexus-interpolation-1.14.jar;C:\Users\Admin\.m2\repository\org\codehaus\plexus\plexus-classworlds\2.4\plexus-classworlds-2.4.jar;C:\Users\Admin\.m2\repository\org\codehaus\plexus\plexus-component-annotations\1.5.5\plexus-component-annotations-1.5.5.jar;C:\Users\Admin\.m2\repository\org\sonatype\plexus\plexus-sec-dispatcher\1.3\plexus-sec-dispatcher-1.3.jar;C:\Users\Admin\.m2\repository\org\sonatype\plexus\plexus-cipher\1.4\plexus-cipher-1.4.jar;C:\Users\Admin\.m2\repository\org\apache\maven\maven-plugin-api\3.0.5\maven-plugin-api-3.0.5.jar;C:\Users\Admin\.m2\repository\org\apache\maven\maven-project\2.2.1\maven-project-2.2.1.jar;C:\Users\Admin\.m2\repository\org\apache\maven\maven-profile\2.2.1\maven-profile-2.2.1.jar;C:\Users\Admin\.m2\repository\org\apache\maven\maven-artifact-manager\2.2.1\maven-artifact-manager-2.2.1.jar;C:\Users\Admin\.m2\repository\org\apache\maven\wagon\wagon-provider-api\1.0-beta-6\wagon-provider-api-1.0-beta-6.jar;C:\Users\Admin\.m2\repository\backport-util-concurrent\backport-util-concurrent\3.1\backport-util-concurrent-3.1.jar;C:\Users\Admin\.m2\repository\org\apache\maven\maven-plugin-registry\2.2.1\maven-plugin-registry-2.2.1.jar;C:\Users\Admin\.m2\repository\org\codehaus\plexus\plexus-container-default\1.0-alpha-9-stable-1\plexus-container-default-1.0-alpha-9-stable-1.jar;C:\Users\Admin\.m2\repository\classworlds\classworlds\1.1-alpha-2\classworlds-1.1-alpha-2.jar;C:\Users\Admin\.m2\repository\org\apache\maven\maven-settings\3.0.5\maven-settings-3.0.5.jar;C:\Users\Admin\.m2\repository\org\apache\maven\plugin-tools\maven-plugin-annotations\3.2\maven-plugin-annotations-3.2.jar;C:\Users\Admin\.m2\repository\org\codehaus\plexus\plexus-utils\3.0.10\plexus-utils-3.0.10.jar;C:\Users\Admin\.m2\repository\org\jboss\as\jboss-as-cli\7.2.0.Final\jboss-as-cli-7.2.0.Final.jar;C:\Users\Admin\.m2\repository\org\jboss\aesh\aesh\0.27\aesh-0.27.jar;C:\Users\Admin\.m2\repository\org\fusesource\jansi\jansi\1.8\jansi-1.8.jar;C:\Users\Admin\.m2\repository\org\jboss\staxmapper\1.1.0.Final\staxmapper-1.1.0.Final.jar;C:\Users\Admin\.m2\repository\org\jboss\logging\jboss-logging\3.1.2.GA\jboss-logging-3.1.2.GA.jar;C:\Users\Admin\.m2\repository\org\jboss\sasl\jboss-sasl\1.0.3.Final\jboss-sasl-1.0.3.Final.jar;C:\Users\Admin\.m2\repository\org\jboss\remotingjmx\remoting-jmx\1.1.0.Final\remoting-jmx-1.1.0.Final.jar;C:\Users\Admin\.m2\repository\org\jboss\marshalling\jboss-marshalling\1.3.16.GA\jboss-marshalling-1.3.16.GA.jar;C:\Users\Admin\.m2\repository\org\jboss\marshalling\jboss-marshalling-river\1.3.16.GA\jboss-marshalling-river-1.3.16.GA.jar;C:\Users\Admin\.m2\repository\org\jboss\xnio\xnio-nio\3.0.7.GA\xnio-nio-3.0.7.GA.jar;C:\Users\Admin\.m2\repository\org\jboss\jboss-vfs\3.1.0.Final\jboss-vfs-3.1.0.Final.jar;C:\Program Files\Java\jdk1.8.0_172\jre\..\lib\jconsole.jar;C:\Users\Admin\.m2\repository\org\jboss\as\jboss-as-build-config\7.2.0.Final\jboss-as-build-config-7.2.0.Final.jar;C:\Users\Admin\.m2\repository\org\jboss\as\jboss-as-controller-client\7.2.0.Final\jboss-as-controller-client-7.2.0.Final.jar;C:\Users\Admin\.m2\repository\org\jboss\as\jboss-as-protocol\7.2.0.Final\jboss-as-protocol-7.2.0.Final.jar;C:\Users\Admin\.m2\repository\org\jboss\jboss-dmr\1.1.6.Final\jboss-dmr-1.1.6.Final.jar;C:\Users\Admin\.m2\repository\org\jboss\threads\jboss-threads\2.1.0.Final\jboss-threads-2.1.0.Final.jar;C:\Users\Admin\.m2\repository\org\jboss\remoting3\jboss-remoting\3.2.12.GA\jboss-remoting-3.2.12.GA.jar;C:\Users\Admin\.m2\repository\org\jboss\xnio\xnio-api\3.0.7.GA\xnio-api-3.0.7.GA.jar;C:\Users\Admin\.m2\repository\org\apache\maven\maven-settings-builder\3.0.5\maven-settings-builder-3.0.5.jar;"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="user.timezone" value="Asia/Calcutta"/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="os.name" value="Windows 10"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_172\jre\bin"/>
+    <property name="sun.java.command" value="C:\Users\Admin\AppData\Local\Temp\surefire2858788103361021508\surefirebooter9048531799559452839.jar C:\Users\Admin\AppData\Local\Temp\surefire2858788103361021508 2021-06-01T15-36-19_751-jvmRun1 surefire6529686726668095273tmp surefire_07739326957703364993tmp"/>
+    <property name="surefire.test.class.path" value="C:\Users\Admin\Desktop\AppsIerra\Appium_Framework\target\test-classes;C:\Users\Admin\Desktop\AppsIerra\Appium_Framework\target\classes;C:\Users\Admin\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\3.141.59\selenium-firefox-driver-3.141.59.jar;C:\Users\Admin\.m2\repository\org\seleniumhq\selenium\selenium-api\3.141.59\selenium-api-3.141.59.jar;C:\Users\Admin\.m2\repository\net\bytebuddy\byte-buddy\1.8.15\byte-buddy-1.8.15.jar;C:\Users\Admin\.m2\repository\org\apache\commons\commons-exec\1.3\commons-exec-1.3.jar;C:\Users\Admin\.m2\repository\com\google\guava\guava\25.0-jre\guava-25.0-jre.jar;C:\Users\Admin\.m2\repository\com\google\code\findbugs\jsr305\1.3.9\jsr305-1.3.9.jar;C:\Users\Admin\.m2\repository\org\checkerframework\checker-compat-qual\2.0.0\checker-compat-qual-2.0.0.jar;C:\Users\Admin\.m2\repository\com\google\errorprone\error_prone_annotations\2.1.3\error_prone_annotations-2.1.3.jar;C:\Users\Admin\.m2\repository\com\google\j2objc\j2objc-annotations\1.1\j2objc-annotations-1.1.jar;C:\Users\Admin\.m2\repository\org\codehaus\mojo\animal-sniffer-annotations\1.14\animal-sniffer-annotations-1.14.jar;C:\Users\Admin\.m2\repository\com\squareup\okhttp3\okhttp\3.11.0\okhttp-3.11.0.jar;C:\Users\Admin\.m2\repository\com\squareup\okio\okio\1.14.0\okio-1.14.0.jar;C:\Users\Admin\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\3.14.0\selenium-remote-driver-3.14.0.jar;C:\Users\Admin\.m2\repository\commons-codec\commons-codec\1.10\commons-codec-1.10.jar;C:\Users\Admin\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\Admin\.m2\repository\org\apache\httpcomponents\httpclient\4.5.5\httpclient-4.5.5.jar;C:\Users\Admin\.m2\repository\org\apache\httpcomponents\httpcore\4.4.9\httpcore-4.4.9.jar;C:\Users\Admin\.m2\repository\org\seleniumhq\selenium\selenium-java\3.141.59\selenium-java-3.141.59.jar;C:\Users\Admin\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\3.141.59\selenium-chrome-driver-3.141.59.jar;C:\Users\Admin\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\3.141.59\selenium-edge-driver-3.141.59.jar;C:\Users\Admin\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\3.141.59\selenium-ie-driver-3.141.59.jar;C:\Users\Admin\.m2\repository\org\seleniumhq\selenium\selenium-opera-driver\3.141.59\selenium-opera-driver-3.141.59.jar;C:\Users\Admin\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\3.141.59\selenium-safari-driver-3.141.59.jar;C:\Users\Admin\.m2\repository\org\seleniumhq\selenium\selenium-support\3.141.59\selenium-support-3.141.59.jar;C:\Users\Admin\.m2\repository\io\appium\java-client\7.4.1\java-client-7.4.1.jar;C:\Users\Admin\.m2\repository\com\google\code\gson\gson\2.8.6\gson-2.8.6.jar;C:\Users\Admin\.m2\repository\cglib\cglib\3.3.0\cglib-3.3.0.jar;C:\Users\Admin\.m2\repository\org\ow2\asm\asm\7.1\asm-7.1.jar;C:\Users\Admin\.m2\repository\commons-validator\commons-validator\1.7\commons-validator-1.7.jar;C:\Users\Admin\.m2\repository\commons-beanutils\commons-beanutils\1.9.4\commons-beanutils-1.9.4.jar;C:\Users\Admin\.m2\repository\commons-digester\commons-digester\2.1\commons-digester-2.1.jar;C:\Users\Admin\.m2\repository\commons-collections\commons-collections\3.2.2\commons-collections-3.2.2.jar;C:\Users\Admin\.m2\repository\org\apache\commons\commons-lang3\3.11\commons-lang3-3.11.jar;C:\Users\Admin\.m2\repository\commons-io\commons-io\2.8.0\commons-io-2.8.0.jar;C:\Users\Admin\.m2\repository\org\springframework\spring-context\5.3.1\spring-context-5.3.1.jar;C:\Users\Admin\.m2\repository\org\springframework\spring-aop\5.3.1\spring-aop-5.3.1.jar;C:\Users\Admin\.m2\repository\org\springframework\spring-beans\5.3.1\spring-beans-5.3.1.jar;C:\Users\Admin\.m2\repository\org\springframework\spring-core\5.3.1\spring-core-5.3.1.jar;C:\Users\Admin\.m2\repository\org\springframework\spring-jcl\5.3.1\spring-jcl-5.3.1.jar;C:\Users\Admin\.m2\repository\org\springframework\spring-expression\5.3.1\spring-expression-5.3.1.jar;C:\Users\Admin\.m2\repository\org\aspectj\aspectjweaver\1.9.6\aspectjweaver-1.9.6.jar;C:\Users\Admin\.m2\repository\org\slf4j\slf4j-api\1.7.30\slf4j-api-1.7.30.jar;C:\Users\Admin\.m2\repository\org\testng\testng\7.3.0\testng-7.3.0.jar;C:\Users\Admin\.m2\repository\com\beust\jcommander\1.78\jcommander-1.78.jar;C:\Users\Admin\.m2\repository\org\apache\ant\ant\1.10.3\ant-1.10.3.jar;C:\Users\Admin\.m2\repository\org\apache\ant\ant-launcher\1.10.3\ant-launcher-1.10.3.jar;C:\Users\Admin\.m2\repository\junit\junit\4.12\junit-4.12.jar;C:\Users\Admin\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\Admin\.m2\repository\com\google\inject\guice\4.2.2\guice-4.2.2-no_aop.jar;C:\Users\Admin\.m2\repository\javax\inject\javax.inject\1\javax.inject-1.jar;C:\Users\Admin\.m2\repository\aopalliance\aopalliance\1.0\aopalliance-1.0.jar;C:\Users\Admin\.m2\repository\org\yaml\snakeyaml\1.21\snakeyaml-1.21.jar;C:\Users\Admin\.m2\repository\org\apache\logging\log4j\log4j-core\2.13.1\log4j-core-2.13.1.jar;C:\Users\Admin\.m2\repository\org\apache\logging\log4j\log4j-api\2.13.1\log4j-api-2.13.1.jar;C:\Users\Admin\.m2\repository\com\sun\mail\javax.mail\1.6.2\javax.mail-1.6.2.jar;C:\Users\Admin\.m2\repository\javax\activation\activation\1.1\activation-1.1.jar;C:\Users\Admin\.m2\repository\org\jsoup\jsoup\1.13.1\jsoup-1.13.1.jar;C:\Users\Admin\.m2\repository\io\github\bonigarcia\webdrivermanager\4.2.2\webdrivermanager-4.2.2.jar;C:\Users\Admin\.m2\repository\org\apache\httpcomponents\client5\httpclient5\5.0.1\httpclient5-5.0.1.jar;C:\Users\Admin\.m2\repository\org\apache\httpcomponents\core5\httpcore5\5.0.1\httpcore5-5.0.1.jar;C:\Users\Admin\.m2\repository\org\apache\httpcomponents\core5\httpcore5-h2\5.0.1\httpcore5-h2-5.0.1.jar;C:\Users\Admin\.m2\repository\org\rauschig\jarchivelib\1.1.0\jarchivelib-1.1.0.jar;C:\Users\Admin\.m2\repository\com\relevantcodes\extentreports\2.41.2\extentreports-2.41.2.jar;C:\Users\Admin\.m2\repository\org\xerial\sqlite-jdbc\3.8.11.1\sqlite-jdbc-3.8.11.1.jar;C:\Users\Admin\.m2\repository\org\freemarker\freemarker\2.3.23\freemarker-2.3.23.jar;C:\Users\Admin\.m2\repository\org\mongodb\mongodb-driver\3.0.4\mongodb-driver-3.0.4.jar;C:\Users\Admin\.m2\repository\org\mongodb\bson\3.0.4\bson-3.0.4.jar;C:\Users\Admin\.m2\repository\org\mongodb\mongodb-driver-core\3.0.4\mongodb-driver-core-3.0.4.jar;C:\Users\Admin\.m2\repository\org\jboss\as\plugins\jboss-as-maven-plugin\7.9.Final\jboss-as-maven-plugin-7.9.Final.jar;C:\Users\Admin\.m2\repository\org\apache\commons\commons-compress\1.5\commons-compress-1.5.jar;C:\Users\Admin\.m2\repository\org\tukaani\xz\1.2\xz-1.2.jar;C:\Users\Admin\.m2\repository\org\apache\maven\maven-core\3.0.5\maven-core-3.0.5.jar;C:\Users\Admin\.m2\repository\org\apache\maven\maven-model\3.0.5\maven-model-3.0.5.jar;C:\Users\Admin\.m2\repository\org\apache\maven\maven-repository-metadata\3.0.5\maven-repository-metadata-3.0.5.jar;C:\Users\Admin\.m2\repository\org\apache\maven\maven-artifact\3.0.5\maven-artifact-3.0.5.jar;C:\Users\Admin\.m2\repository\org\apache\maven\maven-model-builder\3.0.5\maven-model-builder-3.0.5.jar;C:\Users\Admin\.m2\repository\org\apache\maven\maven-aether-provider\3.0.5\maven-aether-provider-3.0.5.jar;C:\Users\Admin\.m2\repository\org\sonatype\aether\aether-spi\1.13.1\aether-spi-1.13.1.jar;C:\Users\Admin\.m2\repository\org\sonatype\aether\aether-impl\1.13.1\aether-impl-1.13.1.jar;C:\Users\Admin\.m2\repository\org\sonatype\aether\aether-api\1.13.1\aether-api-1.13.1.jar;C:\Users\Admin\.m2\repository\org\sonatype\aether\aether-util\1.13.1\aether-util-1.13.1.jar;C:\Users\Admin\.m2\repository\org\sonatype\sisu\sisu-inject-plexus\2.3.0\sisu-inject-plexus-2.3.0.jar;C:\Users\Admin\.m2\repository\org\sonatype\sisu\sisu-inject-bean\2.3.0\sisu-inject-bean-2.3.0.jar;C:\Users\Admin\.m2\repository\org\sonatype\sisu\sisu-guice\3.1.0\sisu-guice-3.1.0-no_aop.jar;C:\Users\Admin\.m2\repository\org\sonatype\sisu\sisu-guava\0.9.9\sisu-guava-0.9.9.jar;C:\Users\Admin\.m2\repository\org\codehaus\plexus\plexus-interpolation\1.14\plexus-interpolation-1.14.jar;C:\Users\Admin\.m2\repository\org\codehaus\plexus\plexus-classworlds\2.4\plexus-classworlds-2.4.jar;C:\Users\Admin\.m2\repository\org\codehaus\plexus\plexus-component-annotations\1.5.5\plexus-component-annotations-1.5.5.jar;C:\Users\Admin\.m2\repository\org\sonatype\plexus\plexus-sec-dispatcher\1.3\plexus-sec-dispatcher-1.3.jar;C:\Users\Admin\.m2\repository\org\sonatype\plexus\plexus-cipher\1.4\plexus-cipher-1.4.jar;C:\Users\Admin\.m2\repository\org\apache\maven\maven-plugin-api\3.0.5\maven-plugin-api-3.0.5.jar;C:\Users\Admin\.m2\repository\org\apache\maven\maven-project\2.2.1\maven-project-2.2.1.jar;C:\Users\Admin\.m2\repository\org\apache\maven\maven-profile\2.2.1\maven-profile-2.2.1.jar;C:\Users\Admin\.m2\repository\org\apache\maven\maven-artifact-manager\2.2.1\maven-artifact-manager-2.2.1.jar;C:\Users\Admin\.m2\repository\org\apache\maven\wagon\wagon-provider-api\1.0-beta-6\wagon-provider-api-1.0-beta-6.jar;C:\Users\Admin\.m2\repository\backport-util-concurrent\backport-util-concurrent\3.1\backport-util-concurrent-3.1.jar;C:\Users\Admin\.m2\repository\org\apache\maven\maven-plugin-registry\2.2.1\maven-plugin-registry-2.2.1.jar;C:\Users\Admin\.m2\repository\org\codehaus\plexus\plexus-container-default\1.0-alpha-9-stable-1\plexus-container-default-1.0-alpha-9-stable-1.jar;C:\Users\Admin\.m2\repository\classworlds\classworlds\1.1-alpha-2\classworlds-1.1-alpha-2.jar;C:\Users\Admin\.m2\repository\org\apache\maven\maven-settings\3.0.5\maven-settings-3.0.5.jar;C:\Users\Admin\.m2\repository\org\apache\maven\plugin-tools\maven-plugin-annotations\3.2\maven-plugin-annotations-3.2.jar;C:\Users\Admin\.m2\repository\org\codehaus\plexus\plexus-utils\3.0.10\plexus-utils-3.0.10.jar;C:\Users\Admin\.m2\repository\org\jboss\as\jboss-as-cli\7.2.0.Final\jboss-as-cli-7.2.0.Final.jar;C:\Users\Admin\.m2\repository\org\jboss\aesh\aesh\0.27\aesh-0.27.jar;C:\Users\Admin\.m2\repository\org\fusesource\jansi\jansi\1.8\jansi-1.8.jar;C:\Users\Admin\.m2\repository\org\jboss\staxmapper\1.1.0.Final\staxmapper-1.1.0.Final.jar;C:\Users\Admin\.m2\repository\org\jboss\logging\jboss-logging\3.1.2.GA\jboss-logging-3.1.2.GA.jar;C:\Users\Admin\.m2\repository\org\jboss\sasl\jboss-sasl\1.0.3.Final\jboss-sasl-1.0.3.Final.jar;C:\Users\Admin\.m2\repository\org\jboss\remotingjmx\remoting-jmx\1.1.0.Final\remoting-jmx-1.1.0.Final.jar;C:\Users\Admin\.m2\repository\org\jboss\marshalling\jboss-marshalling\1.3.16.GA\jboss-marshalling-1.3.16.GA.jar;C:\Users\Admin\.m2\repository\org\jboss\marshalling\jboss-marshalling-river\1.3.16.GA\jboss-marshalling-river-1.3.16.GA.jar;C:\Users\Admin\.m2\repository\org\jboss\xnio\xnio-nio\3.0.7.GA\xnio-nio-3.0.7.GA.jar;C:\Users\Admin\.m2\repository\org\jboss\jboss-vfs\3.1.0.Final\jboss-vfs-3.1.0.Final.jar;C:\Program Files\Java\jdk1.8.0_172\jre\..\lib\jconsole.jar;C:\Users\Admin\.m2\repository\org\jboss\as\jboss-as-build-config\7.2.0.Final\jboss-as-build-config-7.2.0.Final.jar;C:\Users\Admin\.m2\repository\org\jboss\as\jboss-as-controller-client\7.2.0.Final\jboss-as-controller-client-7.2.0.Final.jar;C:\Users\Admin\.m2\repository\org\jboss\as\jboss-as-protocol\7.2.0.Final\jboss-as-protocol-7.2.0.Final.jar;C:\Users\Admin\.m2\repository\org\jboss\jboss-dmr\1.1.6.Final\jboss-dmr-1.1.6.Final.jar;C:\Users\Admin\.m2\repository\org\jboss\threads\jboss-threads\2.1.0.Final\jboss-threads-2.1.0.Final.jar;C:\Users\Admin\.m2\repository\org\jboss\remoting3\jboss-remoting\3.2.12.GA\jboss-remoting-3.2.12.GA.jar;C:\Users\Admin\.m2\repository\org\jboss\xnio\xnio-api\3.0.7.GA\xnio-api-3.0.7.GA.jar;C:\Users\Admin\.m2\repository\org\apache\maven\maven-settings-builder\3.0.5\maven-settings-builder-3.0.5.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\Admin"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk1.8.0_172\jre"/>
+    <property name="basedir" value="C:\Users\Admin\Desktop\AppsIerra\Appium_Framework"/>
+    <property name="file.separator" value="\"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
+    <property name="surefire.real.class.path" value="C:\Users\Admin\AppData\Local\Temp\surefire2858788103361021508\surefirebooter9048531799559452839.jar"/>
+    <property name="sun.boot.class.path" value="C:\Program Files\Java\jdk1.8.0_172\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_172\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_172\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_172\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_172\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_172\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_172\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_172\jre\classes"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="1.8.0_172-b11"/>
+    <property name="user.name" value="Admin"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.endorsed.dirs" value="C:\Program Files\Java\jdk1.8.0_172\jre\lib\endorsed"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="file.encoding" value="Cp1252"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="localRepository" value="C:\Users\Admin\.m2\repository"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="C:\Users\Admin\AppData\Local\Temp\"/>
+    <property name="java.version" value="1.8.0_172"/>
+    <property name="user.dir" value="C:\Users\Admin\Desktop\AppsIerra\Appium_Framework"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk1.8.0_172\jre\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:/Program Files/Java/jdk1.8.0_172/bin/../jre/bin/server;C:/Program Files/Java/jdk1.8.0_172/bin/../jre/bin;C:/Program Files/Java/jdk1.8.0_172/bin/../jre/lib/amd64;C:\oraclexe\app\oracle\product\10.2.0\server\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;&quot;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\Java\jdk1.8.0_172\bin;C:\Program Files\Java\jdk1.8.0_172\jre\bin&quot;;C:\WINDOWS\System32\OpenSSH\;C:\Windows\System32;C:\Users\Admin\Downloads\selenium\apache-maven-3.6.3\bin;C:\Program Files\Git\cmd;C:\Program Files\PuTTY\;C:\Program Files\Android\Android Studio\bin;C:\Users\Admin\AppData\Local\Android\Sdk\platform-tools;C:\Users\Admin\AppData\Local\Android\Sdk\tools;C:\Users\Admin\AppData\Local\Android\Sdk\build-tools;C:\Program Files\nodejs\;%ANT_HOME%\bin;;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\Java\jdk1.8.0_172\bin;C:\Users\Admin\AppData\Roaming\npm;C:\Program Files\nodejs;C:\Users\Admin\Downloads\Apache Ant\apache-ant-1.10.9\bin;C:\Users\Admin\AppData\Local\Microsoft\WindowsApps;C:\Users\Admin\AppData\Local\GitHubDesktop\bin;C:\Users\Admin\Downloads\eclipse;;."/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.version" value="25.172-b11"/>
+    <property name="java.ext.dirs" value="C:\Program Files\Java\jdk1.8.0_172\jre\lib\ext;C:\WINDOWS\Sun\Java\lib\ext"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="52.0"/>
+  </properties>
+  <testcase name="verifyLogin" classname="TestCases.CompleteTestCases" time="24.161"/>
+  <testcase name="verifyRecordsStats" classname="TestCases.CompleteTestCases" time="85.633"/>
+  <testcase name="verifyRecordsBySpecialist02" classname="TestCases.CompleteTestCases" time="45.338"/>
+  <testcase name="verifyRecordsBySpecialist03" classname="TestCases.CompleteTestCases" time="42.29"/>
+  <testcase name="verifyRecordsBySpecialist04" classname="TestCases.CompleteTestCases" time="95.301">
+    <failure message="Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator &apos;By.id: co.nayan.c3specialist_v2.qa_new:id/positiveBtn&apos; (tried for 30 second(s) with 55 milliseconds interval)" type="org.openqa.selenium.TimeoutException">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.id: co.nayan.c3specialist_v2.qa_new:id/positiveBtn' (tried for 30 second(s) with 55 milliseconds interval)
+	at TestCases.CompleteTestCases.verifyRecordsBySpecialist04(CompleteTestCases.java:83)
+Caused by: org.openqa.selenium.NoSuchElementException: 
+An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-K9EHMR9', ip: '192.168.0.144', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_172'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {app: C:\Users\Admin\Desktop\Apps..., appActivity: co.nayan.c3specialist_v2.Sp..., appPackage: co.nayan.c3specialist_v2.qa..., databaseEnabled: false, desired: {app: C:\Users\Admin\Desktop\Apps..., appActivity: co.nayan.c3specialist_v2.Sp..., appPackage: co.nayan.c3specialist_v2.qa..., deviceName: Redmi6, newCommandTimeout: 30, platformName: android, version: 9.0}, deviceApiLevel: 28, deviceManufacturer: Xiaomi, deviceModel: Redmi 6, deviceName: 050b0b767d27, deviceScreenDensity: 320, deviceScreenSize: 720x1440, deviceUDID: 050b0b767d27, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, newCommandTimeout: 30, pixelRatio: 2, platform: LINUX, platformName: Android, platformVersion: 9, statBarHeight: 48, takesScreenshot: true, version: 9.0, viewportRect: {height: 1296, left: 0, top: 48, width: 720}, warnings: {}, webStorageEnabled: false}
+Session ID: e66de7e3-091f-4e1c-906f-3d0069ee80a5
+*** Element info: {Using=id, value=co.nayan.c3specialist_v2.qa_new:id/positiveBtn}
+	at TestCases.CompleteTestCases.verifyRecordsBySpecialist04(CompleteTestCases.java:83)
+</failure>
+    <system-out><![CDATA[usage: C:\Users\Admin\AppData\Roaming\npm\node_modules\appium\build\lib\main.js
+       [-h] [--shell] [--allow-cors] [--reboot] [--ipa IPA] [-a ADDRESS]
+       [-p PORT] [-pa BASEPATH] [-ca CALLBACKADDRESS] [-cp CALLBACKPORT]
+       [-bp BOOTSTRAPPORT] [-r BACKENDRETRIES] [--session-override] [-l]
+       [-g LOGFILE]
+       [--log-level {info,info:debug,info:info,info:warn,info:error,warn,warn:debug,warn:info,warn:warn,warn:error,error,error:debug,error:info,error:warn,error:error,debug,debug:debug,debug:info,debug:warn,debug:error}]
+       [--log-timestamp] [--local-timezone] [--log-no-colors] [-G WEBHOOK]
+       [--safari] [--default-device] [--force-iphone] [--force-ipad]
+       [--tracetemplate AUTOMATIONTRACETEMPLATEPATH]
+       [--instruments INSTRUMENTSPATH] [--nodeconfig NODECONFIG]
+       [-ra ROBOTADDRESS] [-rp ROBOTPORT]
+       [--chromedriver-executable CHROMEDRIVEREXECUTABLE] [--show-config]
+       [--no-perms-check] [--strict-caps] [--isolate-sim-device]
+       [--tmp TMPDIR] [--trace-dir TRACEDIR] [--debug-log-spacing]
+       [--suppress-adb-kill-server] [--long-stacktrace]
+       [--webkit-debug-proxy-port WEBKITDEBUGPROXYPORT]
+       [--webdriveragent-port WDALOCALPORT] [-dc DEFAULTCAPABILITIES]
+       [--relaxed-security] [--allow-insecure ALLOWINSECURE]
+       [--deny-insecure DENYINSECURE]
+       [--command-timeout DEFAULTCOMMANDTIMEOUT] [-k]
+       [--platform-name PLATFORMNAME] [--platform-version PLATFORMVERSION]
+       [--automation-name AUTOMATIONNAME] [--device-name DEVICENAME]
+       [--browser-name BROWSERNAME] [--app APP] [-lt LAUNCHTIMEOUT]
+       [--language LANGUAGE] [--locale LOCALE] [-U UDID]
+       [--orientation ORIENTATION] [--no-reset] [--full-reset]
+       [--app-pkg APPPACKAGE] [--app-activity APPACTIVITY]
+       [--app-wait-package APPWAITPACKAGE]
+       [--app-wait-activity APPWAITACTIVITY]
+       [--device-ready-timeout DEVICEREADYTIMEOUT]
+       [--android-coverage ANDROIDCOVERAGE] [--avd AVD] [--avd-args AVDARGS]
+       [--use-keystore] [--keystore-path KEYSTOREPATH]
+       [--keystore-password KEYSTOREPASSWORD] [--key-alias KEYALIAS]
+       [--key-password KEYPASSWORD] [--intent-action INTENTACTION]
+       [--intent-category INTENTCATEGORY] [--intent-flags INTENTFLAGS]
+       [--intent-args OPTIONALINTENTARGUMENTS] [--dont-stop-app-on-reset]
+       [--calendar-format CALENDARFORMAT] [--native-instruments-lib]
+       [--keep-keychains] [--localizable-strings-dir LOCALIZABLESTRINGSDIR]
+       [--show-ios-log] [--async-trace] [--chromedriver-port CHROMEDRIVERPORT]
+       [--log-filters LOGFILTERS] [-v]
+C:\Users\Admin\AppData\Roaming\npm\node_modules\appium\build\lib\main.js: error: argument -dc/--default-capabilities: invalid parseDefaultCaps value: '{app:C:\\\\Users\\\\Admin\\\\Desktop\\\\AppsIerra\\\\Appium_Framework\\\\app\\\\app-qa_new-release.apk,appActivity:co.nayan.c3specialist_v2.SplashActivity,appPackage:co.nayan.c3specialist_v2.qa_new,deviceName:Redmi6,newCommandTimeout:30,platformName:Android,version:9.0}'
+]]></system-out>
+    <system-err><![CDATA[Jun 01, 2021 3:41:23 PM io.appium.java_client.remote.AppiumCommandExecutor$1 lambda$0
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="verifyRecordsBySpecialist05" classname="TestCases.CompleteTestCases" time="44.619"/>
+  <testcase name="verifyRecordsByManager01" classname="TestCases.CompleteTestCases" time="97.917">
+    <failure message="Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator &apos;By.id: co.nayan.c3specialist_v2.qa_new:id/rejectBtn&apos; (tried for 30 second(s) with 55 milliseconds interval)" type="org.openqa.selenium.TimeoutException">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.id: co.nayan.c3specialist_v2.qa_new:id/rejectBtn' (tried for 30 second(s) with 55 milliseconds interval)
+	at TestCases.CompleteTestCases.verifyRecordsByManager01(CompleteTestCases.java:109)
+Caused by: org.openqa.selenium.NoSuchElementException: 
+An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-K9EHMR9', ip: '192.168.0.144', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_172'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {app: C:\Users\Admin\Desktop\Apps..., appActivity: co.nayan.c3specialist_v2.Sp..., appPackage: co.nayan.c3specialist_v2.qa..., databaseEnabled: false, desired: {app: C:\Users\Admin\Desktop\Apps..., appActivity: co.nayan.c3specialist_v2.Sp..., appPackage: co.nayan.c3specialist_v2.qa..., deviceName: Redmi6, newCommandTimeout: 30, platformName: android, version: 9.0}, deviceApiLevel: 28, deviceManufacturer: Xiaomi, deviceModel: Redmi 6, deviceName: 050b0b767d27, deviceScreenDensity: 320, deviceScreenSize: 720x1440, deviceUDID: 050b0b767d27, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, newCommandTimeout: 30, pixelRatio: 2, platform: LINUX, platformName: Android, platformVersion: 9, statBarHeight: 48, takesScreenshot: true, version: 9.0, viewportRect: {height: 1296, left: 0, top: 48, width: 720}, warnings: {}, webStorageEnabled: false}
+Session ID: 8e4f2d45-f462-4196-b173-c2cadf88c275
+*** Element info: {Using=id, value=co.nayan.c3specialist_v2.qa_new:id/rejectBtn}
+	at TestCases.CompleteTestCases.verifyRecordsByManager01(CompleteTestCases.java:109)
+</failure>
+    <system-out><![CDATA[usage: C:\Users\Admin\AppData\Roaming\npm\node_modules\appium\build\lib\main.js
+       [-h] [--shell] [--allow-cors] [--reboot] [--ipa IPA] [-a ADDRESS]
+       [-p PORT] [-pa BASEPATH] [-ca CALLBACKADDRESS] [-cp CALLBACKPORT]
+       [-bp BOOTSTRAPPORT] [-r BACKENDRETRIES] [--session-override] [-l]
+       [-g LOGFILE]
+       [--log-level {info,info:debug,info:info,info:warn,info:error,warn,warn:debug,warn:info,warn:warn,warn:error,error,error:debug,error:info,error:warn,error:error,debug,debug:debug,debug:info,debug:warn,debug:error}]
+       [--log-timestamp] [--local-timezone] [--log-no-colors] [-G WEBHOOK]
+       [--safari] [--default-device] [--force-iphone] [--force-ipad]
+       [--tracetemplate AUTOMATIONTRACETEMPLATEPATH]
+       [--instruments INSTRUMENTSPATH] [--nodeconfig NODECONFIG]
+       [-ra ROBOTADDRESS] [-rp ROBOTPORT]
+       [--chromedriver-executable CHROMEDRIVEREXECUTABLE] [--show-config]
+       [--no-perms-check] [--strict-caps] [--isolate-sim-device]
+       [--tmp TMPDIR] [--trace-dir TRACEDIR] [--debug-log-spacing]
+       [--suppress-adb-kill-server] [--long-stacktrace]
+       [--webkit-debug-proxy-port WEBKITDEBUGPROXYPORT]
+       [--webdriveragent-port WDALOCALPORT] [-dc DEFAULTCAPABILITIES]
+       [--relaxed-security] [--allow-insecure ALLOWINSECURE]
+       [--deny-insecure DENYINSECURE]
+       [--command-timeout DEFAULTCOMMANDTIMEOUT] [-k]
+       [--platform-name PLATFORMNAME] [--platform-version PLATFORMVERSION]
+       [--automation-name AUTOMATIONNAME] [--device-name DEVICENAME]
+       [--browser-name BROWSERNAME] [--app APP] [-lt LAUNCHTIMEOUT]
+       [--language LANGUAGE] [--locale LOCALE] [-U UDID]
+       [--orientation ORIENTATION] [--no-reset] [--full-reset]
+       [--app-pkg APPPACKAGE] [--app-activity APPACTIVITY]
+       [--app-wait-package APPWAITPACKAGE]
+       [--app-wait-activity APPWAITACTIVITY]
+       [--device-ready-timeout DEVICEREADYTIMEOUT]
+       [--android-coverage ANDROIDCOVERAGE] [--avd AVD] [--avd-args AVDARGS]
+       [--use-keystore] [--keystore-path KEYSTOREPATH]
+       [--keystore-password KEYSTOREPASSWORD] [--key-alias KEYALIAS]
+       [--key-password KEYPASSWORD] [--intent-action INTENTACTION]
+       [--intent-category INTENTCATEGORY] [--intent-flags INTENTFLAGS]
+       [--intent-args OPTIONALINTENTARGUMENTS] [--dont-stop-app-on-reset]
+       [--calendar-format CALENDARFORMAT] [--native-instruments-lib]
+       [--keep-keychains] [--localizable-strings-dir LOCALIZABLESTRINGSDIR]
+       [--show-ios-log] [--async-trace] [--chromedriver-port CHROMEDRIVERPORT]
+       [--log-filters LOGFILTERS] [-v]
+C:\Users\Admin\AppData\Roaming\npm\node_modules\appium\build\lib\main.js: error: argument -dc/--default-capabilities: invalid parseDefaultCaps value: '{app:C:\\\\Users\\\\Admin\\\\Desktop\\\\AppsIerra\\\\Appium_Framework\\\\app\\\\app-qa_new-release.apk,appActivity:co.nayan.c3specialist_v2.SplashActivity,appPackage:co.nayan.c3specialist_v2.qa_new,deviceName:Redmi6,newCommandTimeout:30,platformName:Android,version:9.0}'
+]]></system-out>
+    <system-err><![CDATA[Jun 01, 2021 3:44:19 PM io.appium.java_client.remote.AppiumCommandExecutor$1 lambda$0
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="verifyRecordsByManager02" classname="TestCases.CompleteTestCases" time="68.974"/>
+  <testcase name="verifyRecordsByManager03" classname="TestCases.CompleteTestCases" time="64.989"/>
+  <testcase name="verifyRecordsByManager05" classname="TestCases.CompleteTestCases" time="80.994">
+    <failure message="Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator &apos;By.id: co.nayan.c3specialist_v2.qa_new:id/editModeIv&apos; (tried for 30 second(s) with 55 milliseconds interval)" type="org.openqa.selenium.TimeoutException">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.id: co.nayan.c3specialist_v2.qa_new:id/editModeIv' (tried for 30 second(s) with 55 milliseconds interval)
+	at TestCases.CompleteTestCases.verifyRecordsByManager05(CompleteTestCases.java:148)
+Caused by: org.openqa.selenium.NoSuchElementException: 
+An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-K9EHMR9', ip: '192.168.0.144', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_172'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {app: C:\Users\Admin\Desktop\Apps..., appActivity: co.nayan.c3specialist_v2.Sp..., appPackage: co.nayan.c3specialist_v2.qa..., databaseEnabled: false, desired: {app: C:\Users\Admin\Desktop\Apps..., appActivity: co.nayan.c3specialist_v2.Sp..., appPackage: co.nayan.c3specialist_v2.qa..., deviceName: Redmi6, newCommandTimeout: 30, platformName: android, version: 9.0}, deviceApiLevel: 28, deviceManufacturer: Xiaomi, deviceModel: Redmi 6, deviceName: 050b0b767d27, deviceScreenDensity: 320, deviceScreenSize: 720x1440, deviceUDID: 050b0b767d27, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, newCommandTimeout: 30, pixelRatio: 2, platform: LINUX, platformName: Android, platformVersion: 9, statBarHeight: 48, takesScreenshot: true, version: 9.0, viewportRect: {height: 1296, left: 0, top: 48, width: 720}, warnings: {}, webStorageEnabled: false}
+Session ID: b02e5373-0bd3-4f48-804b-c225a7bc5964
+*** Element info: {Using=id, value=co.nayan.c3specialist_v2.qa_new:id/editModeIv}
+	at TestCases.CompleteTestCases.verifyRecordsByManager05(CompleteTestCases.java:148)
+</failure>
+    <system-out><![CDATA[usage: C:\Users\Admin\AppData\Roaming\npm\node_modules\appium\build\lib\main.js
+       [-h] [--shell] [--allow-cors] [--reboot] [--ipa IPA] [-a ADDRESS]
+       [-p PORT] [-pa BASEPATH] [-ca CALLBACKADDRESS] [-cp CALLBACKPORT]
+       [-bp BOOTSTRAPPORT] [-r BACKENDRETRIES] [--session-override] [-l]
+       [-g LOGFILE]
+       [--log-level {info,info:debug,info:info,info:warn,info:error,warn,warn:debug,warn:info,warn:warn,warn:error,error,error:debug,error:info,error:warn,error:error,debug,debug:debug,debug:info,debug:warn,debug:error}]
+       [--log-timestamp] [--local-timezone] [--log-no-colors] [-G WEBHOOK]
+       [--safari] [--default-device] [--force-iphone] [--force-ipad]
+       [--tracetemplate AUTOMATIONTRACETEMPLATEPATH]
+       [--instruments INSTRUMENTSPATH] [--nodeconfig NODECONFIG]
+       [-ra ROBOTADDRESS] [-rp ROBOTPORT]
+       [--chromedriver-executable CHROMEDRIVEREXECUTABLE] [--show-config]
+       [--no-perms-check] [--strict-caps] [--isolate-sim-device]
+       [--tmp TMPDIR] [--trace-dir TRACEDIR] [--debug-log-spacing]
+       [--suppress-adb-kill-server] [--long-stacktrace]
+       [--webkit-debug-proxy-port WEBKITDEBUGPROXYPORT]
+       [--webdriveragent-port WDALOCALPORT] [-dc DEFAULTCAPABILITIES]
+       [--relaxed-security] [--allow-insecure ALLOWINSECURE]
+       [--deny-insecure DENYINSECURE]
+       [--command-timeout DEFAULTCOMMANDTIMEOUT] [-k]
+       [--platform-name PLATFORMNAME] [--platform-version PLATFORMVERSION]
+       [--automation-name AUTOMATIONNAME] [--device-name DEVICENAME]
+       [--browser-name BROWSERNAME] [--app APP] [-lt LAUNCHTIMEOUT]
+       [--language LANGUAGE] [--locale LOCALE] [-U UDID]
+       [--orientation ORIENTATION] [--no-reset] [--full-reset]
+       [--app-pkg APPPACKAGE] [--app-activity APPACTIVITY]
+       [--app-wait-package APPWAITPACKAGE]
+       [--app-wait-activity APPWAITACTIVITY]
+       [--device-ready-timeout DEVICEREADYTIMEOUT]
+       [--android-coverage ANDROIDCOVERAGE] [--avd AVD] [--avd-args AVDARGS]
+       [--use-keystore] [--keystore-path KEYSTOREPATH]
+       [--keystore-password KEYSTOREPASSWORD] [--key-alias KEYALIAS]
+       [--key-password KEYPASSWORD] [--intent-action INTENTACTION]
+       [--intent-category INTENTCATEGORY] [--intent-flags INTENTFLAGS]
+       [--intent-args OPTIONALINTENTARGUMENTS] [--dont-stop-app-on-reset]
+       [--calendar-format CALENDARFORMAT] [--native-instruments-lib]
+       [--keep-keychains] [--localizable-strings-dir LOCALIZABLESTRINGSDIR]
+       [--show-ios-log] [--async-trace] [--chromedriver-port CHROMEDRIVERPORT]
+       [--log-filters LOGFILTERS] [-v]
+C:\Users\Admin\AppData\Roaming\npm\node_modules\appium\build\lib\main.js: error: argument -dc/--default-capabilities: invalid parseDefaultCaps value: '{app:C:\\\\Users\\\\Admin\\\\Desktop\\\\AppsIerra\\\\Appium_Framework\\\\app\\\\app-qa_new-release.apk,appActivity:co.nayan.c3specialist_v2.SplashActivity,appPackage:co.nayan.c3specialist_v2.qa_new,deviceName:Redmi6,newCommandTimeout:30,platformName:Android,version:9.0}'
+]]></system-out>
+    <system-err><![CDATA[Jun 01, 2021 3:49:07 PM io.appium.java_client.remote.AppiumCommandExecutor$1 lambda$0
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="reVerifyRecordsByManager01" classname="TestCases.CompleteTestCases" time="79.788">
+    <failure message="Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator &apos;By.id: co.nayan.c3specialist_v2.qa_new:id/falseBtn&apos; (tried for 30 second(s) with 55 milliseconds interval)" type="org.openqa.selenium.TimeoutException">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.id: co.nayan.c3specialist_v2.qa_new:id/falseBtn' (tried for 30 second(s) with 55 milliseconds interval)
+	at TestCases.CompleteTestCases.reVerifyRecordsByManager01(CompleteTestCases.java:161)
+Caused by: org.openqa.selenium.NoSuchElementException: 
+An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-K9EHMR9', ip: '192.168.0.144', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_172'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {app: C:\Users\Admin\Desktop\Apps..., appActivity: co.nayan.c3specialist_v2.Sp..., appPackage: co.nayan.c3specialist_v2.qa..., databaseEnabled: false, desired: {app: C:\Users\Admin\Desktop\Apps..., appActivity: co.nayan.c3specialist_v2.Sp..., appPackage: co.nayan.c3specialist_v2.qa..., deviceName: Redmi6, newCommandTimeout: 30, platformName: android, version: 9.0}, deviceApiLevel: 28, deviceManufacturer: Xiaomi, deviceModel: Redmi 6, deviceName: 050b0b767d27, deviceScreenDensity: 320, deviceScreenSize: 720x1440, deviceUDID: 050b0b767d27, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, newCommandTimeout: 30, pixelRatio: 2, platform: LINUX, platformName: Android, platformVersion: 9, statBarHeight: 48, takesScreenshot: true, version: 9.0, viewportRect: {height: 1296, left: 0, top: 48, width: 720}, warnings: {}, webStorageEnabled: false}
+Session ID: ffe70742-f653-46de-ada5-69cc4229112d
+*** Element info: {Using=id, value=co.nayan.c3specialist_v2.qa_new:id/falseBtn}
+	at TestCases.CompleteTestCases.reVerifyRecordsByManager01(CompleteTestCases.java:161)
+</failure>
+    <system-out><![CDATA[usage: C:\Users\Admin\AppData\Roaming\npm\node_modules\appium\build\lib\main.js
+       [-h] [--shell] [--allow-cors] [--reboot] [--ipa IPA] [-a ADDRESS]
+       [-p PORT] [-pa BASEPATH] [-ca CALLBACKADDRESS] [-cp CALLBACKPORT]
+       [-bp BOOTSTRAPPORT] [-r BACKENDRETRIES] [--session-override] [-l]
+       [-g LOGFILE]
+       [--log-level {info,info:debug,info:info,info:warn,info:error,warn,warn:debug,warn:info,warn:warn,warn:error,error,error:debug,error:info,error:warn,error:error,debug,debug:debug,debug:info,debug:warn,debug:error}]
+       [--log-timestamp] [--local-timezone] [--log-no-colors] [-G WEBHOOK]
+       [--safari] [--default-device] [--force-iphone] [--force-ipad]
+       [--tracetemplate AUTOMATIONTRACETEMPLATEPATH]
+       [--instruments INSTRUMENTSPATH] [--nodeconfig NODECONFIG]
+       [-ra ROBOTADDRESS] [-rp ROBOTPORT]
+       [--chromedriver-executable CHROMEDRIVEREXECUTABLE] [--show-config]
+       [--no-perms-check] [--strict-caps] [--isolate-sim-device]
+       [--tmp TMPDIR] [--trace-dir TRACEDIR] [--debug-log-spacing]
+       [--suppress-adb-kill-server] [--long-stacktrace]
+       [--webkit-debug-proxy-port WEBKITDEBUGPROXYPORT]
+       [--webdriveragent-port WDALOCALPORT] [-dc DEFAULTCAPABILITIES]
+       [--relaxed-security] [--allow-insecure ALLOWINSECURE]
+       [--deny-insecure DENYINSECURE]
+       [--command-timeout DEFAULTCOMMANDTIMEOUT] [-k]
+       [--platform-name PLATFORMNAME] [--platform-version PLATFORMVERSION]
+       [--automation-name AUTOMATIONNAME] [--device-name DEVICENAME]
+       [--browser-name BROWSERNAME] [--app APP] [-lt LAUNCHTIMEOUT]
+       [--language LANGUAGE] [--locale LOCALE] [-U UDID]
+       [--orientation ORIENTATION] [--no-reset] [--full-reset]
+       [--app-pkg APPPACKAGE] [--app-activity APPACTIVITY]
+       [--app-wait-package APPWAITPACKAGE]
+       [--app-wait-activity APPWAITACTIVITY]
+       [--device-ready-timeout DEVICEREADYTIMEOUT]
+       [--android-coverage ANDROIDCOVERAGE] [--avd AVD] [--avd-args AVDARGS]
+       [--use-keystore] [--keystore-path KEYSTOREPATH]
+       [--keystore-password KEYSTOREPASSWORD] [--key-alias KEYALIAS]
+       [--key-password KEYPASSWORD] [--intent-action INTENTACTION]
+       [--intent-category INTENTCATEGORY] [--intent-flags INTENTFLAGS]
+       [--intent-args OPTIONALINTENTARGUMENTS] [--dont-stop-app-on-reset]
+       [--calendar-format CALENDARFORMAT] [--native-instruments-lib]
+       [--keep-keychains] [--localizable-strings-dir LOCALIZABLESTRINGSDIR]
+       [--show-ios-log] [--async-trace] [--chromedriver-port CHROMEDRIVERPORT]
+       [--log-filters LOGFILTERS] [-v]
+C:\Users\Admin\AppData\Roaming\npm\node_modules\appium\build\lib\main.js: error: argument -dc/--default-capabilities: invalid parseDefaultCaps value: '{app:C:\\\\Users\\\\Admin\\\\Desktop\\\\AppsIerra\\\\Appium_Framework\\\\app\\\\app-qa_new-release.apk,appActivity:co.nayan.c3specialist_v2.SplashActivity,appPackage:co.nayan.c3specialist_v2.qa_new,deviceName:Redmi6,newCommandTimeout:30,platformName:Android,version:9.0}'
+]]></system-out>
+    <system-err><![CDATA[Jun 01, 2021 3:50:44 PM io.appium.java_client.remote.AppiumCommandExecutor$1 lambda$0
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="reVerifyRecordsByManager02" classname="TestCases.CompleteTestCases" time="79.496">
+    <failure message="Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator &apos;By.id: co.nayan.c3specialist_v2.qa_new:id/falseBtn&apos; (tried for 30 second(s) with 55 milliseconds interval)" type="org.openqa.selenium.TimeoutException">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.id: co.nayan.c3specialist_v2.qa_new:id/falseBtn' (tried for 30 second(s) with 55 milliseconds interval)
+	at TestCases.CompleteTestCases.reVerifyRecordsByManager02(CompleteTestCases.java:174)
+Caused by: org.openqa.selenium.NoSuchElementException: 
+An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-K9EHMR9', ip: '192.168.0.144', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_172'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {app: C:\Users\Admin\Desktop\Apps..., appActivity: co.nayan.c3specialist_v2.Sp..., appPackage: co.nayan.c3specialist_v2.qa..., databaseEnabled: false, desired: {app: C:\Users\Admin\Desktop\Apps..., appActivity: co.nayan.c3specialist_v2.Sp..., appPackage: co.nayan.c3specialist_v2.qa..., deviceName: Redmi6, newCommandTimeout: 30, platformName: android, version: 9.0}, deviceApiLevel: 28, deviceManufacturer: Xiaomi, deviceModel: Redmi 6, deviceName: 050b0b767d27, deviceScreenDensity: 320, deviceScreenSize: 720x1440, deviceUDID: 050b0b767d27, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, newCommandTimeout: 30, pixelRatio: 2, platform: LINUX, platformName: Android, platformVersion: 9, statBarHeight: 48, takesScreenshot: true, version: 9.0, viewportRect: {height: 1296, left: 0, top: 48, width: 720}, warnings: {}, webStorageEnabled: false}
+Session ID: 31708415-b8fe-41e6-8f11-9e87910e393b
+*** Element info: {Using=id, value=co.nayan.c3specialist_v2.qa_new:id/falseBtn}
+	at TestCases.CompleteTestCases.reVerifyRecordsByManager02(CompleteTestCases.java:174)
+</failure>
+    <system-out><![CDATA[usage: C:\Users\Admin\AppData\Roaming\npm\node_modules\appium\build\lib\main.js
+       [-h] [--shell] [--allow-cors] [--reboot] [--ipa IPA] [-a ADDRESS]
+       [-p PORT] [-pa BASEPATH] [-ca CALLBACKADDRESS] [-cp CALLBACKPORT]
+       [-bp BOOTSTRAPPORT] [-r BACKENDRETRIES] [--session-override] [-l]
+       [-g LOGFILE]
+       [--log-level {info,info:debug,info:info,info:warn,info:error,warn,warn:debug,warn:info,warn:warn,warn:error,error,error:debug,error:info,error:warn,error:error,debug,debug:debug,debug:info,debug:warn,debug:error}]
+       [--log-timestamp] [--local-timezone] [--log-no-colors] [-G WEBHOOK]
+       [--safari] [--default-device] [--force-iphone] [--force-ipad]
+       [--tracetemplate AUTOMATIONTRACETEMPLATEPATH]
+       [--instruments INSTRUMENTSPATH] [--nodeconfig NODECONFIG]
+       [-ra ROBOTADDRESS] [-rp ROBOTPORT]
+       [--chromedriver-executable CHROMEDRIVEREXECUTABLE] [--show-config]
+       [--no-perms-check] [--strict-caps] [--isolate-sim-device]
+       [--tmp TMPDIR] [--trace-dir TRACEDIR] [--debug-log-spacing]
+       [--suppress-adb-kill-server] [--long-stacktrace]
+       [--webkit-debug-proxy-port WEBKITDEBUGPROXYPORT]
+       [--webdriveragent-port WDALOCALPORT] [-dc DEFAULTCAPABILITIES]
+       [--relaxed-security] [--allow-insecure ALLOWINSECURE]
+       [--deny-insecure DENYINSECURE]
+       [--command-timeout DEFAULTCOMMANDTIMEOUT] [-k]
+       [--platform-name PLATFORMNAME] [--platform-version PLATFORMVERSION]
+       [--automation-name AUTOMATIONNAME] [--device-name DEVICENAME]
+       [--browser-name BROWSERNAME] [--app APP] [-lt LAUNCHTIMEOUT]
+       [--language LANGUAGE] [--locale LOCALE] [-U UDID]
+       [--orientation ORIENTATION] [--no-reset] [--full-reset]
+       [--app-pkg APPPACKAGE] [--app-activity APPACTIVITY]
+       [--app-wait-package APPWAITPACKAGE]
+       [--app-wait-activity APPWAITACTIVITY]
+       [--device-ready-timeout DEVICEREADYTIMEOUT]
+       [--android-coverage ANDROIDCOVERAGE] [--avd AVD] [--avd-args AVDARGS]
+       [--use-keystore] [--keystore-path KEYSTOREPATH]
+       [--keystore-password KEYSTOREPASSWORD] [--key-alias KEYALIAS]
+       [--key-password KEYPASSWORD] [--intent-action INTENTACTION]
+       [--intent-category INTENTCATEGORY] [--intent-flags INTENTFLAGS]
+       [--intent-args OPTIONALINTENTARGUMENTS] [--dont-stop-app-on-reset]
+       [--calendar-format CALENDARFORMAT] [--native-instruments-lib]
+       [--keep-keychains] [--localizable-strings-dir LOCALIZABLESTRINGSDIR]
+       [--show-ios-log] [--async-trace] [--chromedriver-port CHROMEDRIVERPORT]
+       [--log-filters LOGFILTERS] [-v]
+C:\Users\Admin\AppData\Roaming\npm\node_modules\appium\build\lib\main.js: error: argument -dc/--default-capabilities: invalid parseDefaultCaps value: '{app:C:\\\\Users\\\\Admin\\\\Desktop\\\\AppsIerra\\\\Appium_Framework\\\\app\\\\app-qa_new-release.apk,appActivity:co.nayan.c3specialist_v2.SplashActivity,appPackage:co.nayan.c3specialist_v2.qa_new,deviceName:Redmi6,newCommandTimeout:30,platformName:Android,version:9.0}'
+]]></system-out>
+    <system-err><![CDATA[Jun 01, 2021 3:52:21 PM io.appium.java_client.remote.AppiumCommandExecutor$1 lambda$0
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="reVerifyRecordsByManager03" classname="TestCases.CompleteTestCases" time="79">
+    <failure message="Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator &apos;By.id: co.nayan.c3specialist_v2.qa_new:id/falseBtn&apos; (tried for 30 second(s) with 55 milliseconds interval)" type="org.openqa.selenium.TimeoutException">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.id: co.nayan.c3specialist_v2.qa_new:id/falseBtn' (tried for 30 second(s) with 55 milliseconds interval)
+	at TestCases.CompleteTestCases.reVerifyRecordsByManager03(CompleteTestCases.java:187)
+Caused by: org.openqa.selenium.NoSuchElementException: 
+An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-K9EHMR9', ip: '192.168.0.144', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_172'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {app: C:\Users\Admin\Desktop\Apps..., appActivity: co.nayan.c3specialist_v2.Sp..., appPackage: co.nayan.c3specialist_v2.qa..., databaseEnabled: false, desired: {app: C:\Users\Admin\Desktop\Apps..., appActivity: co.nayan.c3specialist_v2.Sp..., appPackage: co.nayan.c3specialist_v2.qa..., deviceName: Redmi6, newCommandTimeout: 30, platformName: android, version: 9.0}, deviceApiLevel: 28, deviceManufacturer: Xiaomi, deviceModel: Redmi 6, deviceName: 050b0b767d27, deviceScreenDensity: 320, deviceScreenSize: 720x1440, deviceUDID: 050b0b767d27, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, newCommandTimeout: 30, pixelRatio: 2, platform: LINUX, platformName: Android, platformVersion: 9, statBarHeight: 48, takesScreenshot: true, version: 9.0, viewportRect: {height: 1296, left: 0, top: 48, width: 720}, warnings: {}, webStorageEnabled: false}
+Session ID: 2e668d4c-9335-4925-9d36-099e04cc9400
+*** Element info: {Using=id, value=co.nayan.c3specialist_v2.qa_new:id/falseBtn}
+	at TestCases.CompleteTestCases.reVerifyRecordsByManager03(CompleteTestCases.java:187)
+</failure>
+    <system-out><![CDATA[usage: C:\Users\Admin\AppData\Roaming\npm\node_modules\appium\build\lib\main.js
+       [-h] [--shell] [--allow-cors] [--reboot] [--ipa IPA] [-a ADDRESS]
+       [-p PORT] [-pa BASEPATH] [-ca CALLBACKADDRESS] [-cp CALLBACKPORT]
+       [-bp BOOTSTRAPPORT] [-r BACKENDRETRIES] [--session-override] [-l]
+       [-g LOGFILE]
+       [--log-level {info,info:debug,info:info,info:warn,info:error,warn,warn:debug,warn:info,warn:warn,warn:error,error,error:debug,error:info,error:warn,error:error,debug,debug:debug,debug:info,debug:warn,debug:error}]
+       [--log-timestamp] [--local-timezone] [--log-no-colors] [-G WEBHOOK]
+       [--safari] [--default-device] [--force-iphone] [--force-ipad]
+       [--tracetemplate AUTOMATIONTRACETEMPLATEPATH]
+       [--instruments INSTRUMENTSPATH] [--nodeconfig NODECONFIG]
+       [-ra ROBOTADDRESS] [-rp ROBOTPORT]
+       [--chromedriver-executable CHROMEDRIVEREXECUTABLE] [--show-config]
+       [--no-perms-check] [--strict-caps] [--isolate-sim-device]
+       [--tmp TMPDIR] [--trace-dir TRACEDIR] [--debug-log-spacing]
+       [--suppress-adb-kill-server] [--long-stacktrace]
+       [--webkit-debug-proxy-port WEBKITDEBUGPROXYPORT]
+       [--webdriveragent-port WDALOCALPORT] [-dc DEFAULTCAPABILITIES]
+       [--relaxed-security] [--allow-insecure ALLOWINSECURE]
+       [--deny-insecure DENYINSECURE]
+       [--command-timeout DEFAULTCOMMANDTIMEOUT] [-k]
+       [--platform-name PLATFORMNAME] [--platform-version PLATFORMVERSION]
+       [--automation-name AUTOMATIONNAME] [--device-name DEVICENAME]
+       [--browser-name BROWSERNAME] [--app APP] [-lt LAUNCHTIMEOUT]
+       [--language LANGUAGE] [--locale LOCALE] [-U UDID]
+       [--orientation ORIENTATION] [--no-reset] [--full-reset]
+       [--app-pkg APPPACKAGE] [--app-activity APPACTIVITY]
+       [--app-wait-package APPWAITPACKAGE]
+       [--app-wait-activity APPWAITACTIVITY]
+       [--device-ready-timeout DEVICEREADYTIMEOUT]
+       [--android-coverage ANDROIDCOVERAGE] [--avd AVD] [--avd-args AVDARGS]
+       [--use-keystore] [--keystore-path KEYSTOREPATH]
+       [--keystore-password KEYSTOREPASSWORD] [--key-alias KEYALIAS]
+       [--key-password KEYPASSWORD] [--intent-action INTENTACTION]
+       [--intent-category INTENTCATEGORY] [--intent-flags INTENTFLAGS]
+       [--intent-args OPTIONALINTENTARGUMENTS] [--dont-stop-app-on-reset]
+       [--calendar-format CALENDARFORMAT] [--native-instruments-lib]
+       [--keep-keychains] [--localizable-strings-dir LOCALIZABLESTRINGSDIR]
+       [--show-ios-log] [--async-trace] [--chromedriver-port CHROMEDRIVERPORT]
+       [--log-filters LOGFILTERS] [-v]
+C:\Users\Admin\AppData\Roaming\npm\node_modules\appium\build\lib\main.js: error: argument -dc/--default-capabilities: invalid parseDefaultCaps value: '{app:C:\\\\Users\\\\Admin\\\\Desktop\\\\AppsIerra\\\\Appium_Framework\\\\app\\\\app-qa_new-release.apk,appActivity:co.nayan.c3specialist_v2.SplashActivity,appPackage:co.nayan.c3specialist_v2.qa_new,deviceName:Redmi6,newCommandTimeout:30,platformName:Android,version:9.0}'
+]]></system-out>
+    <system-err><![CDATA[Jun 01, 2021 3:53:59 PM io.appium.java_client.remote.AppiumCommandExecutor$1 lambda$0
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="verifyRecordsByManager04" classname="TestCases.CompleteTestCases" time="80.952">
+    <failure message="Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator &apos;By.id: co.nayan.c3specialist_v2.qa_new:id/falseBtn&apos; (tried for 30 second(s) with 55 milliseconds interval)" type="org.openqa.selenium.TimeoutException">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.id: co.nayan.c3specialist_v2.qa_new:id/falseBtn' (tried for 30 second(s) with 55 milliseconds interval)
+	at TestCases.CompleteTestCases.verifyRecordsByManager04(CompleteTestCases.java:200)
+Caused by: org.openqa.selenium.NoSuchElementException: 
+An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-K9EHMR9', ip: '192.168.0.144', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_172'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {app: C:\Users\Admin\Desktop\Apps..., appActivity: co.nayan.c3specialist_v2.Sp..., appPackage: co.nayan.c3specialist_v2.qa..., databaseEnabled: false, desired: {app: C:\Users\Admin\Desktop\Apps..., appActivity: co.nayan.c3specialist_v2.Sp..., appPackage: co.nayan.c3specialist_v2.qa..., deviceName: Redmi6, newCommandTimeout: 30, platformName: android, version: 9.0}, deviceApiLevel: 28, deviceManufacturer: Xiaomi, deviceModel: Redmi 6, deviceName: 050b0b767d27, deviceScreenDensity: 320, deviceScreenSize: 720x1440, deviceUDID: 050b0b767d27, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, newCommandTimeout: 30, pixelRatio: 2, platform: LINUX, platformName: Android, platformVersion: 9, statBarHeight: 48, takesScreenshot: true, version: 9.0, viewportRect: {height: 1296, left: 0, top: 48, width: 720}, warnings: {}, webStorageEnabled: false}
+Session ID: 8a5848df-bf85-499c-bb84-f205838c41a1
+*** Element info: {Using=id, value=co.nayan.c3specialist_v2.qa_new:id/falseBtn}
+	at TestCases.CompleteTestCases.verifyRecordsByManager04(CompleteTestCases.java:200)
+</failure>
+    <system-out><![CDATA[usage: C:\Users\Admin\AppData\Roaming\npm\node_modules\appium\build\lib\main.js
+       [-h] [--shell] [--allow-cors] [--reboot] [--ipa IPA] [-a ADDRESS]
+       [-p PORT] [-pa BASEPATH] [-ca CALLBACKADDRESS] [-cp CALLBACKPORT]
+       [-bp BOOTSTRAPPORT] [-r BACKENDRETRIES] [--session-override] [-l]
+       [-g LOGFILE]
+       [--log-level {info,info:debug,info:info,info:warn,info:error,warn,warn:debug,warn:info,warn:warn,warn:error,error,error:debug,error:info,error:warn,error:error,debug,debug:debug,debug:info,debug:warn,debug:error}]
+       [--log-timestamp] [--local-timezone] [--log-no-colors] [-G WEBHOOK]
+       [--safari] [--default-device] [--force-iphone] [--force-ipad]
+       [--tracetemplate AUTOMATIONTRACETEMPLATEPATH]
+       [--instruments INSTRUMENTSPATH] [--nodeconfig NODECONFIG]
+       [-ra ROBOTADDRESS] [-rp ROBOTPORT]
+       [--chromedriver-executable CHROMEDRIVEREXECUTABLE] [--show-config]
+       [--no-perms-check] [--strict-caps] [--isolate-sim-device]
+       [--tmp TMPDIR] [--trace-dir TRACEDIR] [--debug-log-spacing]
+       [--suppress-adb-kill-server] [--long-stacktrace]
+       [--webkit-debug-proxy-port WEBKITDEBUGPROXYPORT]
+       [--webdriveragent-port WDALOCALPORT] [-dc DEFAULTCAPABILITIES]
+       [--relaxed-security] [--allow-insecure ALLOWINSECURE]
+       [--deny-insecure DENYINSECURE]
+       [--command-timeout DEFAULTCOMMANDTIMEOUT] [-k]
+       [--platform-name PLATFORMNAME] [--platform-version PLATFORMVERSION]
+       [--automation-name AUTOMATIONNAME] [--device-name DEVICENAME]
+       [--browser-name BROWSERNAME] [--app APP] [-lt LAUNCHTIMEOUT]
+       [--language LANGUAGE] [--locale LOCALE] [-U UDID]
+       [--orientation ORIENTATION] [--no-reset] [--full-reset]
+       [--app-pkg APPPACKAGE] [--app-activity APPACTIVITY]
+       [--app-wait-package APPWAITPACKAGE]
+       [--app-wait-activity APPWAITACTIVITY]
+       [--device-ready-timeout DEVICEREADYTIMEOUT]
+       [--android-coverage ANDROIDCOVERAGE] [--avd AVD] [--avd-args AVDARGS]
+       [--use-keystore] [--keystore-path KEYSTOREPATH]
+       [--keystore-password KEYSTOREPASSWORD] [--key-alias KEYALIAS]
+       [--key-password KEYPASSWORD] [--intent-action INTENTACTION]
+       [--intent-category INTENTCATEGORY] [--intent-flags INTENTFLAGS]
+       [--intent-args OPTIONALINTENTARGUMENTS] [--dont-stop-app-on-reset]
+       [--calendar-format CALENDARFORMAT] [--native-instruments-lib]
+       [--keep-keychains] [--localizable-strings-dir LOCALIZABLESTRINGSDIR]
+       [--show-ios-log] [--async-trace] [--chromedriver-port CHROMEDRIVERPORT]
+       [--log-filters LOGFILTERS] [-v]
+C:\Users\Admin\AppData\Roaming\npm\node_modules\appium\build\lib\main.js: error: argument -dc/--default-capabilities: invalid parseDefaultCaps value: '{app:C:\\\\Users\\\\Admin\\\\Desktop\\\\AppsIerra\\\\Appium_Framework\\\\app\\\\app-qa_new-release.apk,appActivity:co.nayan.c3specialist_v2.SplashActivity,appPackage:co.nayan.c3specialist_v2.qa_new,deviceName:Redmi6,newCommandTimeout:30,platformName:Android,version:9.0}'
+]]></system-out>
+    <system-err><![CDATA[Jun 01, 2021 3:55:37 PM io.appium.java_client.remote.AppiumCommandExecutor$1 lambda$0
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+</testsuite>

@@ -1,0 +1,102 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 14, Failures: 7, Errors: 0, Skipped: 0, Time elapsed: 1,238.467 s <<< FAILURE! - in TestSuite
+verifyRecordsBySpecialist04(TestCases.CompleteTestCases)  Time elapsed: 95.301 s  <<< FAILURE!
+org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.id: co.nayan.c3specialist_v2.qa_new:id/positiveBtn' (tried for 30 second(s) with 55 milliseconds interval)
+	at TestCases.CompleteTestCases.verifyRecordsBySpecialist04(CompleteTestCases.java:83)
+Caused by: org.openqa.selenium.NoSuchElementException: 
+An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-K9EHMR9', ip: '192.168.0.144', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_172'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {app: C:\Users\Admin\Desktop\Apps..., appActivity: co.nayan.c3specialist_v2.Sp..., appPackage: co.nayan.c3specialist_v2.qa..., databaseEnabled: false, desired: {app: C:\Users\Admin\Desktop\Apps..., appActivity: co.nayan.c3specialist_v2.Sp..., appPackage: co.nayan.c3specialist_v2.qa..., deviceName: Redmi6, newCommandTimeout: 30, platformName: android, version: 9.0}, deviceApiLevel: 28, deviceManufacturer: Xiaomi, deviceModel: Redmi 6, deviceName: 050b0b767d27, deviceScreenDensity: 320, deviceScreenSize: 720x1440, deviceUDID: 050b0b767d27, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, newCommandTimeout: 30, pixelRatio: 2, platform: LINUX, platformName: Android, platformVersion: 9, statBarHeight: 48, takesScreenshot: true, version: 9.0, viewportRect: {height: 1296, left: 0, top: 48, width: 720}, warnings: {}, webStorageEnabled: false}
+Session ID: e66de7e3-091f-4e1c-906f-3d0069ee80a5
+*** Element info: {Using=id, value=co.nayan.c3specialist_v2.qa_new:id/positiveBtn}
+	at TestCases.CompleteTestCases.verifyRecordsBySpecialist04(CompleteTestCases.java:83)
+
+verifyRecordsByManager01(TestCases.CompleteTestCases)  Time elapsed: 97.917 s  <<< FAILURE!
+org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.id: co.nayan.c3specialist_v2.qa_new:id/rejectBtn' (tried for 30 second(s) with 55 milliseconds interval)
+	at TestCases.CompleteTestCases.verifyRecordsByManager01(CompleteTestCases.java:109)
+Caused by: org.openqa.selenium.NoSuchElementException: 
+An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-K9EHMR9', ip: '192.168.0.144', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_172'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {app: C:\Users\Admin\Desktop\Apps..., appActivity: co.nayan.c3specialist_v2.Sp..., appPackage: co.nayan.c3specialist_v2.qa..., databaseEnabled: false, desired: {app: C:\Users\Admin\Desktop\Apps..., appActivity: co.nayan.c3specialist_v2.Sp..., appPackage: co.nayan.c3specialist_v2.qa..., deviceName: Redmi6, newCommandTimeout: 30, platformName: android, version: 9.0}, deviceApiLevel: 28, deviceManufacturer: Xiaomi, deviceModel: Redmi 6, deviceName: 050b0b767d27, deviceScreenDensity: 320, deviceScreenSize: 720x1440, deviceUDID: 050b0b767d27, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, newCommandTimeout: 30, pixelRatio: 2, platform: LINUX, platformName: Android, platformVersion: 9, statBarHeight: 48, takesScreenshot: true, version: 9.0, viewportRect: {height: 1296, left: 0, top: 48, width: 720}, warnings: {}, webStorageEnabled: false}
+Session ID: 8e4f2d45-f462-4196-b173-c2cadf88c275
+*** Element info: {Using=id, value=co.nayan.c3specialist_v2.qa_new:id/rejectBtn}
+	at TestCases.CompleteTestCases.verifyRecordsByManager01(CompleteTestCases.java:109)
+
+verifyRecordsByManager05(TestCases.CompleteTestCases)  Time elapsed: 80.994 s  <<< FAILURE!
+org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.id: co.nayan.c3specialist_v2.qa_new:id/editModeIv' (tried for 30 second(s) with 55 milliseconds interval)
+	at TestCases.CompleteTestCases.verifyRecordsByManager05(CompleteTestCases.java:148)
+Caused by: org.openqa.selenium.NoSuchElementException: 
+An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-K9EHMR9', ip: '192.168.0.144', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_172'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {app: C:\Users\Admin\Desktop\Apps..., appActivity: co.nayan.c3specialist_v2.Sp..., appPackage: co.nayan.c3specialist_v2.qa..., databaseEnabled: false, desired: {app: C:\Users\Admin\Desktop\Apps..., appActivity: co.nayan.c3specialist_v2.Sp..., appPackage: co.nayan.c3specialist_v2.qa..., deviceName: Redmi6, newCommandTimeout: 30, platformName: android, version: 9.0}, deviceApiLevel: 28, deviceManufacturer: Xiaomi, deviceModel: Redmi 6, deviceName: 050b0b767d27, deviceScreenDensity: 320, deviceScreenSize: 720x1440, deviceUDID: 050b0b767d27, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, newCommandTimeout: 30, pixelRatio: 2, platform: LINUX, platformName: Android, platformVersion: 9, statBarHeight: 48, takesScreenshot: true, version: 9.0, viewportRect: {height: 1296, left: 0, top: 48, width: 720}, warnings: {}, webStorageEnabled: false}
+Session ID: b02e5373-0bd3-4f48-804b-c225a7bc5964
+*** Element info: {Using=id, value=co.nayan.c3specialist_v2.qa_new:id/editModeIv}
+	at TestCases.CompleteTestCases.verifyRecordsByManager05(CompleteTestCases.java:148)
+
+reVerifyRecordsByManager01(TestCases.CompleteTestCases)  Time elapsed: 79.788 s  <<< FAILURE!
+org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.id: co.nayan.c3specialist_v2.qa_new:id/falseBtn' (tried for 30 second(s) with 55 milliseconds interval)
+	at TestCases.CompleteTestCases.reVerifyRecordsByManager01(CompleteTestCases.java:161)
+Caused by: org.openqa.selenium.NoSuchElementException: 
+An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-K9EHMR9', ip: '192.168.0.144', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_172'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {app: C:\Users\Admin\Desktop\Apps..., appActivity: co.nayan.c3specialist_v2.Sp..., appPackage: co.nayan.c3specialist_v2.qa..., databaseEnabled: false, desired: {app: C:\Users\Admin\Desktop\Apps..., appActivity: co.nayan.c3specialist_v2.Sp..., appPackage: co.nayan.c3specialist_v2.qa..., deviceName: Redmi6, newCommandTimeout: 30, platformName: android, version: 9.0}, deviceApiLevel: 28, deviceManufacturer: Xiaomi, deviceModel: Redmi 6, deviceName: 050b0b767d27, deviceScreenDensity: 320, deviceScreenSize: 720x1440, deviceUDID: 050b0b767d27, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, newCommandTimeout: 30, pixelRatio: 2, platform: LINUX, platformName: Android, platformVersion: 9, statBarHeight: 48, takesScreenshot: true, version: 9.0, viewportRect: {height: 1296, left: 0, top: 48, width: 720}, warnings: {}, webStorageEnabled: false}
+Session ID: ffe70742-f653-46de-ada5-69cc4229112d
+*** Element info: {Using=id, value=co.nayan.c3specialist_v2.qa_new:id/falseBtn}
+	at TestCases.CompleteTestCases.reVerifyRecordsByManager01(CompleteTestCases.java:161)
+
+reVerifyRecordsByManager02(TestCases.CompleteTestCases)  Time elapsed: 79.496 s  <<< FAILURE!
+org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.id: co.nayan.c3specialist_v2.qa_new:id/falseBtn' (tried for 30 second(s) with 55 milliseconds interval)
+	at TestCases.CompleteTestCases.reVerifyRecordsByManager02(CompleteTestCases.java:174)
+Caused by: org.openqa.selenium.NoSuchElementException: 
+An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-K9EHMR9', ip: '192.168.0.144', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_172'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {app: C:\Users\Admin\Desktop\Apps..., appActivity: co.nayan.c3specialist_v2.Sp..., appPackage: co.nayan.c3specialist_v2.qa..., databaseEnabled: false, desired: {app: C:\Users\Admin\Desktop\Apps..., appActivity: co.nayan.c3specialist_v2.Sp..., appPackage: co.nayan.c3specialist_v2.qa..., deviceName: Redmi6, newCommandTimeout: 30, platformName: android, version: 9.0}, deviceApiLevel: 28, deviceManufacturer: Xiaomi, deviceModel: Redmi 6, deviceName: 050b0b767d27, deviceScreenDensity: 320, deviceScreenSize: 720x1440, deviceUDID: 050b0b767d27, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, newCommandTimeout: 30, pixelRatio: 2, platform: LINUX, platformName: Android, platformVersion: 9, statBarHeight: 48, takesScreenshot: true, version: 9.0, viewportRect: {height: 1296, left: 0, top: 48, width: 720}, warnings: {}, webStorageEnabled: false}
+Session ID: 31708415-b8fe-41e6-8f11-9e87910e393b
+*** Element info: {Using=id, value=co.nayan.c3specialist_v2.qa_new:id/falseBtn}
+	at TestCases.CompleteTestCases.reVerifyRecordsByManager02(CompleteTestCases.java:174)
+
+reVerifyRecordsByManager03(TestCases.CompleteTestCases)  Time elapsed: 79 s  <<< FAILURE!
+org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.id: co.nayan.c3specialist_v2.qa_new:id/falseBtn' (tried for 30 second(s) with 55 milliseconds interval)
+	at TestCases.CompleteTestCases.reVerifyRecordsByManager03(CompleteTestCases.java:187)
+Caused by: org.openqa.selenium.NoSuchElementException: 
+An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-K9EHMR9', ip: '192.168.0.144', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_172'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {app: C:\Users\Admin\Desktop\Apps..., appActivity: co.nayan.c3specialist_v2.Sp..., appPackage: co.nayan.c3specialist_v2.qa..., databaseEnabled: false, desired: {app: C:\Users\Admin\Desktop\Apps..., appActivity: co.nayan.c3specialist_v2.Sp..., appPackage: co.nayan.c3specialist_v2.qa..., deviceName: Redmi6, newCommandTimeout: 30, platformName: android, version: 9.0}, deviceApiLevel: 28, deviceManufacturer: Xiaomi, deviceModel: Redmi 6, deviceName: 050b0b767d27, deviceScreenDensity: 320, deviceScreenSize: 720x1440, deviceUDID: 050b0b767d27, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, newCommandTimeout: 30, pixelRatio: 2, platform: LINUX, platformName: Android, platformVersion: 9, statBarHeight: 48, takesScreenshot: true, version: 9.0, viewportRect: {height: 1296, left: 0, top: 48, width: 720}, warnings: {}, webStorageEnabled: false}
+Session ID: 2e668d4c-9335-4925-9d36-099e04cc9400
+*** Element info: {Using=id, value=co.nayan.c3specialist_v2.qa_new:id/falseBtn}
+	at TestCases.CompleteTestCases.reVerifyRecordsByManager03(CompleteTestCases.java:187)
+
+verifyRecordsByManager04(TestCases.CompleteTestCases)  Time elapsed: 80.952 s  <<< FAILURE!
+org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.id: co.nayan.c3specialist_v2.qa_new:id/falseBtn' (tried for 30 second(s) with 55 milliseconds interval)
+	at TestCases.CompleteTestCases.verifyRecordsByManager04(CompleteTestCases.java:200)
+Caused by: org.openqa.selenium.NoSuchElementException: 
+An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-K9EHMR9', ip: '192.168.0.144', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_172'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {app: C:\Users\Admin\Desktop\Apps..., appActivity: co.nayan.c3specialist_v2.Sp..., appPackage: co.nayan.c3specialist_v2.qa..., databaseEnabled: false, desired: {app: C:\Users\Admin\Desktop\Apps..., appActivity: co.nayan.c3specialist_v2.Sp..., appPackage: co.nayan.c3specialist_v2.qa..., deviceName: Redmi6, newCommandTimeout: 30, platformName: android, version: 9.0}, deviceApiLevel: 28, deviceManufacturer: Xiaomi, deviceModel: Redmi 6, deviceName: 050b0b767d27, deviceScreenDensity: 320, deviceScreenSize: 720x1440, deviceUDID: 050b0b767d27, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, newCommandTimeout: 30, pixelRatio: 2, platform: LINUX, platformName: Android, platformVersion: 9, statBarHeight: 48, takesScreenshot: true, version: 9.0, viewportRect: {height: 1296, left: 0, top: 48, width: 720}, warnings: {}, webStorageEnabled: false}
+Session ID: 8a5848df-bf85-499c-bb84-f205838c41a1
+*** Element info: {Using=id, value=co.nayan.c3specialist_v2.qa_new:id/falseBtn}
+	at TestCases.CompleteTestCases.verifyRecordsByManager04(CompleteTestCases.java:200)
+
