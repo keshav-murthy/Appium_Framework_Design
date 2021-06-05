@@ -17,11 +17,10 @@ public class CompleteTestCases extends TestBase {
 
 	@BeforeMethod
 	public void openPage() throws FileNotFoundException, IOException {
-		
+
 //		setUpCapabalities(InitializePropertyFile.property.getProperty("device_name"),
 //				InitializePropertyFile.property.getProperty("version"),
 //				InitializePropertyFile.property.getProperty("platform_name"));
-//		installApp(InitializePropertyFile.property.getProperty("appium_server_url"));
 //		installApp(appium_server_url.asString());
 	}
 
@@ -151,6 +150,7 @@ public class CompleteTestCases extends TestBase {
 		ques.managerValidation01();
 		home.verifyTest(InitializePropertyFile.property.getProperty("M04"));
 	}
+
 	@Test(priority = 11)
 	public void verifyRecordsByManager05() {
 

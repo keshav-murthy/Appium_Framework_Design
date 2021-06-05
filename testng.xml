@@ -5,9 +5,9 @@
 		<listener class-name="listener.ExtentReporterNG" />
 	</listeners>
 
-	<test name="DemoTests">
+	<test name="APIDemoTests">
 		<classes>
-			<class name="TestCases.CompleteTestCases" />
+			<class name="Demo.ApiDemos_Practice" />
 		</classes>
 	</test>
 </suite>

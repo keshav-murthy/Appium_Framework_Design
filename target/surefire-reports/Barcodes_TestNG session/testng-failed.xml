@@ -4,22 +4,16 @@
   <listeners>
     <listener class-name="listener.ExtentReporterNG"/>
   </listeners>
-  <test thread-count="5" verbose="0" name="DemoTests(failed)">
+  <test thread-count="5" verbose="0" name="APIDemoTests(failed)">
     <classes>
-      <class name="TestCases.CompleteTestCases">
+      <class name="Demo.ApiDemos_Practice">
         <methods>
-          <include name="reVerifyRecordsByManager03"/>
           <include name="setUp"/>
-          <include name="reVerifyRecordsByManager01"/>
-          <include name="reVerifyRecordsByManager02"/>
           <include name="openPage"/>
           <include name="tearDown"/>
-          <include name="verifyRecordsByManager04"/>
-          <include name="verifyRecordsByManager05"/>
-          <include name="verifyRecordsBySpecialist04"/>
-          <include name="verifyRecordsByManager01"/>
+          <include name="textField"/>
         </methods>
-      </class> <!-- TestCases.CompleteTestCases -->
+      </class> <!-- Demo.ApiDemos_Practice -->
     </classes>
-  </test> <!-- DemoTests(failed) -->
+  </test> <!-- APIDemoTests(failed) -->
 </suite> <!-- Failed suite [Barcodes_TestNG session] -->

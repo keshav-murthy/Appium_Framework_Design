@@ -4,8 +4,8 @@ import java.io.FileInputStream;
 import java.util.Properties;
 
 /**
- * Config that is supplied to tests via a properties file. Holds data that is
- * used by the tests and the url of the environment under test.
+ * Capabilities that is supplied to tests via a properties file. Holds device specifications that is
+ * used by the tests. 
  */
 public enum Capabilities {
 
@@ -14,7 +14,7 @@ public enum Capabilities {
 	private final String capabilitiesPath = System.getProperty("capabilitiesPath");
 
 	private Properties properties;
-
+ 
 	private String value;
 
 	private void init() {

@@ -40,7 +40,7 @@ public class ApiDemos_Practice extends TestBase {
 		driver.findElement(By.xpath("//android.widget.CheckBox[@text='Checkbox 1']")).click();
 		driver.findElement(By.xpath("//android.widget.CheckBox[@text='Checkbox 2']")).click();
 		driver.findElement(By.xpath("//android.widget.RadioButton[@text='RadioButton 1']")).click();
-		driver.findElement(By.xpath("//android.widget.RadioButton[@text='RadioButton 2']")).click();
+//		driver.findElement(By.xpath("//android.widget.RadioButton[@text='RadioButton 2']")).click();
 
 	}
 }
