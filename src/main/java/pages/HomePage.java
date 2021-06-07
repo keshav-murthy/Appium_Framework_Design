@@ -1,11 +1,11 @@
 package pages;
 
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.testng.Assert;
 
 import commons.BasePage;
+import io.appium.java_client.android.AndroidDriver;
 
 public class HomePage extends BasePage {
 
@@ -15,7 +15,7 @@ public class HomePage extends BasePage {
 	@FindBy(id = "co.nayan.c3specialist_v2.qa_new:id/homeMessageTxt")
 	WebElement message;
 
-	public HomePage(WebDriver driver) {
+	public HomePage(AndroidDriver<WebElement> driver) {
 		super(driver);
 	}
 

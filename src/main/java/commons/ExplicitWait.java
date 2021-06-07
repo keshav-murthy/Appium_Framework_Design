@@ -1,27 +1,30 @@
 package commons;
 
+import java.util.concurrent.TimeUnit;
+
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+import org.openqa.selenium.By;
+import org.openqa.selenium.ElementNotVisibleException;
+import org.openqa.selenium.NoSuchElementException;
+import org.openqa.selenium.NoSuchFrameException;
+import org.openqa.selenium.StaleElementReferenceException;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+
 import com.google.common.base.Function;
 
 import io.appium.java_client.android.AndroidDriver;
 
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
-import org.openqa.selenium.*;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
-
-import java.util.concurrent.TimeUnit;
-
 public class ExplicitWait extends GenericHelper {
 
 	private static Logger log = LogManager.getLogger(ExplicitWait.class);
-	private AndroidDriver driver;
-	private JavaScriptHelper js;
+	private AndroidDriver<WebElement> driver;
 
-	public ExplicitWait(WebDriver driver) {
+	public ExplicitWait(AndroidDriver<WebElement> driver) {
 		super(driver);
-		this.driver = (AndroidDriver) driver;
-		this.js = new JavaScriptHelper(driver);
+		this.driver = driver;
 	}
 
 	private WebDriverWait getWait() {
@@ -113,7 +116,6 @@ public class ExplicitWait extends GenericHelper {
 
 	public WebElement forElementToBeClickable(By element, int timeOutInSeconds, int pollingEveryInMilliSec) {
 		log.info("Waiting for element to be clickable: " + element);
-		forPage();
 		return waitFor(ExpectedConditions.elementToBeClickable(element), timeOutInSeconds, pollingEveryInMilliSec);
 	}
 
@@ -143,72 +145,22 @@ public class ExplicitWait extends GenericHelper {
 				pollingEveryInMilliSec);
 	}
 
-	public boolean forPage() {
-		return forPage(Timeouts.PAGE);
-	}
-
-	public boolean forPage(int timeoutInSeconds) {
-		log.debug("Waiting for the document to load");
-		WebDriverWait wait = getWait(timeoutInSeconds, Timeouts.POLLING_INTERVAL);
-		return wait.until(jQueryLoad()) && wait.until(documentLoad());
-	}
-
-	public void until(Function expectedCondition) {
+	@SuppressWarnings("unchecked")
+	public void until(@SuppressWarnings("rawtypes") Function expectedCondition) {
 		getWait().until(expectedCondition);
 	}
 
-	private <V> V waitFor(Function expectedCondition) {
+	private <V> V waitFor(@SuppressWarnings("rawtypes") Function expectedCondition) {
 		return waitFor(expectedCondition, Timeouts.EXPLICIT, Timeouts.POLLING_INTERVAL);
 	}
 
-	private <V> V waitFor(Function expectedCondition, int timeOutInSeconds, int pollingEveryInMilliSec) {
+	private <V> V waitFor(@SuppressWarnings("rawtypes") Function expectedCondition, int timeOutInSeconds,
+			int pollingEveryInMilliSec) {
 		setImplicitWait(0);
 		WebDriverWait wait = getWait(timeOutInSeconds, pollingEveryInMilliSec);
+		@SuppressWarnings("unchecked")
 		V result = (V) wait.until(expectedCondition);
 		setImplicitWait(Timeouts.IMPLICIT);
 		return result;
-	}
-
-	private Function<WebDriver, Boolean> textExistInElement(final WebElement element, final String searchedText) {
-		return new Function<WebDriver, Boolean>() {
-			@Override
-			public Boolean apply(WebDriver driver) {
-				String textFromElement = element.getText();
-				if (textFromElement.contains(searchedText)) {
-					return true;
-				}
-				return false;
-			}
-		};
-	}
-
-	private Function<WebDriver, Boolean> elementIsPresentInDOM(final By locator) {
-		return new Function<WebDriver, Boolean>() {
-			public Boolean apply(WebDriver driver) {
-				return driver.findElements(locator).size() > 0;
-			}
-		};
-	}
-
-	private Function<WebDriver, Boolean> jQueryLoad() {
-		return new Function<WebDriver, Boolean>() {
-			@Override
-			public Boolean apply(WebDriver driver) {
-				try {
-					return ((Long) js.executeScript("return jQuery.active") == 0);
-				} catch (Exception e) {
-					return true;
-				}
-			}
-		};
-	}
-
-	private Function<WebDriver, Boolean> documentLoad() {
-		return new Function<WebDriver, Boolean>() {
-			@Override
-			public Boolean apply(WebDriver driver) {
-				return js.executeScript("return document.readyState").toString().equals("complete");
-			}
-		};
 	}
 }

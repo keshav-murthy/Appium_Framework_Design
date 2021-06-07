@@ -7,7 +7,6 @@ import java.util.Properties;
 
 public class InitializePropertyFile {
 	public static Properties property;
-//	public static String testaccount = null;
 
 	public static void loadPropertyFile() throws FileNotFoundException, IOException {
 		property = new Properties();

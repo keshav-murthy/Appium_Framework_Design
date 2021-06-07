@@ -5,13 +5,16 @@ import static commons.Configuration.app_package;
 
 import java.net.MalformedURLException;
 
-import org.openqa.selenium.By;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 import commons.TestBase;
-import io.appium.java_client.MobileBy;
-import io.appium.java_client.MobileElement;
+import pages2.ApiDemosPage;
+import pages2.ConfirmationPage;
+import pages2.ControlsPage;
+import pages2.HoloDarkThemePage;
+import pages2.HomePage;
+import pages2.ViewsPage;
 
 public class ApiDemos_Practice extends TestBase {
 
@@ -23,24 +26,26 @@ public class ApiDemos_Practice extends TestBase {
 	@Test(priority = 1)
 	public void textField() {
 
-		driver.findElement(By.xpath("//android.widget.TextView[@text='OK']")).click();
-		driver.findElement(By.xpath("//android.widget.TextView[@text='API Demos']")).click();
+		ConfirmationPage confirm = new ConfirmationPage(driver);
+		confirm.clickOnOk();
+		
+		HomePage home = new HomePage(driver);
+		home.clickOnApiDemos();
 
-		// AndroidElement list = (AndroidElement)
-		// driver.findElement(By.className("android.widget.TextView"));
+		ApiDemosPage api = new ApiDemosPage(driver);
+		api.clickOnViews();
+		
+		ViewsPage views=new ViewsPage(driver);
+		views.clickOnControls();
 
-		MobileElement listItems = (MobileElement) driver.findElement(MobileBy.AndroidUIAutomator(
-				"new UiScrollable(new UiSelector()).scrollIntoView(" + "new UiSelector().text(\"Views\"));"));
+		ControlsPage controls = new ControlsPage(driver);
+		controls.clickOnDarkTheme();
 
-		listItems.click();
-
-		driver.findElement(By.xpath("//android.widget.TextView[@text='Controls']")).click();
-		driver.findElement(By.xpath("//android.widget.TextView[@text='04. Holo Dark Theme']")).click();
-		driver.findElement(By.className("android.widget.EditText")).sendKeys("keshav");
-		driver.findElement(By.xpath("//android.widget.CheckBox[@text='Checkbox 1']")).click();
-		driver.findElement(By.xpath("//android.widget.CheckBox[@text='Checkbox 2']")).click();
-		driver.findElement(By.xpath("//android.widget.RadioButton[@text='RadioButton 1']")).click();
-//		driver.findElement(By.xpath("//android.widget.RadioButton[@text='RadioButton 2']")).click();
-
+		HoloDarkThemePage holodark = new HoloDarkThemePage(driver);
+		holodark.enterText();
+		holodark.clickOnCheckBox1();
+		holodark.clickOnCheckBox2();
+		holodark.clickOnRadioButton1();
+		holodark.clickOnRadioButton2();
 	}
 }

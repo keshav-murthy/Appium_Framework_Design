@@ -2,14 +2,14 @@ package pages;
 
 import java.util.List;
 
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 
-import commons.BasePage;
+import commons.CommonGestures;
+import io.appium.java_client.android.AndroidDriver;
 
-public class QuestionnairePage extends BasePage {
+public class QuestionnairePage extends CommonGestures {
 
 	HomePage home = new HomePage(driver);
 
@@ -52,7 +52,7 @@ public class QuestionnairePage extends BasePage {
 	@FindBy(id = "co.nayan.c3specialist_v2.qa_new:id/positiveBtn")
 	WebElement positive;
 
-	public QuestionnairePage(WebDriver driver) {
+	public QuestionnairePage(AndroidDriver<WebElement> driver) {
 		super(driver);
 	}
 
@@ -124,7 +124,7 @@ public class QuestionnairePage extends BasePage {
 	}
 
 	public void specialist03Verification() {
-		
+
 		pause(3000);
 		for (int i = 0; i < 5; i++)
 			clickOnTrue();
@@ -132,7 +132,7 @@ public class QuestionnairePage extends BasePage {
 	}
 
 	public void specialist04Verification() {
-		
+
 		pause(3000);
 		for (int i = 0; i < 5; i++)
 			clickOnTrue();

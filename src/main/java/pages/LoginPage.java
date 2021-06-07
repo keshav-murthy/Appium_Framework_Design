@@ -1,10 +1,10 @@
 package pages;
 
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
 import commons.BasePage;
+import io.appium.java_client.android.AndroidDriver;
 
 public class LoginPage extends BasePage {
 
@@ -29,7 +29,7 @@ public class LoginPage extends BasePage {
 	@FindBy(id = "co.nayan.c3specialist_v2.qa_new:id/hindiTxt")
 	WebElement hindi;
 
-	public LoginPage(WebDriver driver) {
+	public LoginPage(AndroidDriver<WebElement> driver) {
 		super(driver);
 	}
 
