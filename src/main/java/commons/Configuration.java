@@ -9,7 +9,7 @@ import java.util.Properties;
  */
 public enum Configuration {
 
-	appium_server_url, app_package, app_activity, app_name;
+	appium_server_url, app_package, app_activity, app_name, settings_app_package, settings_app_activity;
 
 	private final String configPath = System.getProperty("configPath");
 

@@ -7,7 +7,6 @@ import org.openqa.selenium.Dimension;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
 
-import io.appium.java_client.MobileDriver;
 import io.appium.java_client.TouchAction;
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.android.nativekey.AndroidKey;
@@ -19,8 +18,8 @@ import io.appium.java_client.touch.offset.PointOption;
 @SuppressWarnings("rawtypes")
 public class CommonGestures {
 
+	public static TouchAction action;
 	protected AndroidDriver<WebElement> driver;
-
 	protected static ExplicitWait wait;
 
 	protected CommonGestures(AndroidDriver<WebElement> driver) {
@@ -60,15 +59,19 @@ public class CommonGestures {
 
 	public void dragAndDrop(WebElement source, WebElement target) {
 
-		TouchAction action = new TouchAction(((MobileDriver) driver));
+		TouchAction action = new TouchAction(driver);
 		action.longPress(ElementOption.element(source)).moveTo(ElementOption.element(target)).release().perform();
 	}
 
-	public void progressBar(WebElement source) {
+	public void progressBar(WebElement source, int perc) {
 
-		TouchAction action = new TouchAction(((MobileDriver) driver));
-		action.longPress(ElementOption.element(source)).moveTo(ElementOption.element(source, 250, 250)).release()
-				.perform();
+		int start = source.getLocation().getX();
+		int y = source.getLocation().getY();
+		int end = start + source.getSize().getWidth();
+
+		action = new TouchAction(driver);
+		int moveTo = (int) (end * ((float) perc / 100));
+		action.longPress(PointOption.point(start, y)).moveTo(PointOption.point(moveTo, y)).release().perform();
 	}
 
 	public void verticalScroll() {

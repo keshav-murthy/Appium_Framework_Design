@@ -4,6 +4,7 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import org.testng.Assert;
 
 import commons.CommonGestures;
 import io.appium.java_client.android.AndroidDriver;
@@ -67,5 +68,12 @@ public class HoloDarkThemePage extends CommonGestures {
 		wait.forElementToBeVisible(radioButton2);
 		click(radioButton2);
 		lOGGER.info("Clicking on 2nd Radio Button");
+	}
+	
+	public void verifyTest() {
+		
+		Assert.assertTrue((radioButton1.getAttribute("checked")).equals("false"));
+		Assert.assertTrue((radioButton2.getAttribute("checked")).equals("true"));
+		lOGGER.info("Verifying the state of Radio buttons after the execution");
 	}
 }

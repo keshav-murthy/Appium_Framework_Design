@@ -24,7 +24,7 @@ public class ApiDemos_Practice extends TestBase {
 	}
 
 	@Test(priority = 1)
-	public void textField() {
+	public void textFieldCheckBoxRadioButton() {
 
 		ConfirmationPage confirm = new ConfirmationPage(driver);
 		confirm.clickOnOk();
@@ -47,5 +47,6 @@ public class ApiDemos_Practice extends TestBase {
 		holodark.clickOnCheckBox2();
 		holodark.clickOnRadioButton1();
 		holodark.clickOnRadioButton2();
+		holodark.verifyTest();
 	}
 }
