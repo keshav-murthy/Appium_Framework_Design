@@ -1,7 +1,7 @@
 package Demo;
 
-import static commons.Configuration.settings_app_activity;
-import static commons.Configuration.settings_app_package;
+import static commons.Configuration.app_activity;
+import static commons.Configuration.app_package;
 
 import java.net.MalformedURLException;
 
@@ -9,25 +9,32 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 import commons.TestBase;
-import pages2.DisplayPage;
-import pages2.SettingsHomePage;
+import pages2.ApiDemosPage;
+import pages2.ConfirmationPage;
+import pages2.HomePage;
+import pages2.SeekBarPage;
+import pages2.ViewsPage;
 
 public class ProgressBar extends TestBase {
 
 	@BeforeMethod
 	public void openPage() throws MalformedURLException {
-		openInstalledApp(settings_app_package.asString(), settings_app_activity.asString());
+		openInstalledApp(app_package.asString(), app_activity.asString());
 	}
 
-	@Test(priority = 1)
+	@Test()
 	public void verifyingProgressBar() {
 
-		SettingsHomePage settings = new SettingsHomePage(driver);
-		settings.clickOnSearch();
-		settings.enterIntoSearch();
-		settings.clickOnDisplay();
-		DisplayPage display=new DisplayPage(driver);
-		display.clickOnBrightnessLevel();
-		display.adjustingProgressBar();
+		ConfirmationPage confirm = new ConfirmationPage(driver);
+		confirm.clickOnOk();
+		HomePage home = new HomePage(driver);
+		home.clickOnApiDemos();
+		ApiDemosPage api = new ApiDemosPage(driver);
+		api.clickOnViews();
+		ViewsPage views = new ViewsPage(driver);
+		views.clickOnSeekBar();
+		SeekBarPage seek = new SeekBarPage(driver);
+		seek.selectRange();
+		seek.verifyProgress();
 	}
 }

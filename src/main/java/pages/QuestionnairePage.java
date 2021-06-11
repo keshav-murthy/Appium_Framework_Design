@@ -157,7 +157,7 @@ public class QuestionnairePage extends CommonGestures {
 		for (int i = 0; i < managerImage.size(); i++) {
 			wait.forElementToBeVisible(managerImage.get(i));
 			click(managerImage.get(i));
-			verticalScroll();
+			scrollOrSwipe(0.5,0.8,0.5,0.2);
 		}
 	}
 

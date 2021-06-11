@@ -74,19 +74,17 @@ public class CommonGestures {
 		action.longPress(PointOption.point(start, y)).moveTo(PointOption.point(moveTo, y)).release().perform();
 	}
 
-	public void verticalScroll() {
+	public void scrollOrSwipe(double sx, double sy, double ex, double ey) {
 
 		TouchAction action = new TouchAction(driver);
 		Dimension size = driver.manage().window().getSize();
-		int width = size.width;
-		int height = size.height;
-		int middleOfX = width / 2;
-		int startYCoordinate = (int) (height * .7);
-		int endYCoordinate = (int) (height * .2);
+		int start_x = (int) (size.width * sx);
+		int start_y = (int) (size.height * sy);
+		int end_x = (int) (size.width * ex);
+		int end_y = (int) (size.height * ey);
 
-		action.press(PointOption.point(middleOfX, startYCoordinate))
-				.waitAction(WaitOptions.waitOptions(Duration.ofSeconds(2)))
-				.moveTo(PointOption.point(middleOfX, endYCoordinate)).release().perform();
+		action.press(PointOption.point(start_x, start_y)).waitAction(WaitOptions.waitOptions(Duration.ofSeconds(2)))
+				.moveTo(PointOption.point(end_x, end_y)).release().perform();
 //		int startX = seekBar.getLocation().getX();
 //		int startY = seekBar.getLocation().getY();
 //		int endX = seekBar.getSize().getWidth();

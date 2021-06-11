@@ -11,10 +11,10 @@ import io.appium.java_client.android.AndroidDriver;
 public class HomePage extends CommonGestures {
 
 	@FindBy(xpath = "//android.widget.TextView[@text='API Demos']")
-	WebElement apiDemos;
-
-	@FindBy(id = "co.nayan.c3specialist_v2.qa_new:id/homeMessageTxt")
-	WebElement message;
+	WebElement apiDemos;	
+	
+	@FindBy(xpath = "//android.widget.TextView[@text='SWIPE']")
+	WebElement swipe;
 	
 	private static final Logger lOGGER = LogManager.getLogger(HomePage.class.getName());
 
@@ -27,5 +27,12 @@ public class HomePage extends CommonGestures {
 		wait.forElementToBeVisible(apiDemos);
 		click(apiDemos);
 		lOGGER.info("Selecting APIDemos option from the list avalaible on home page");
+	}
+	
+	public void clickOnSwipe() {
+
+		wait.forElementToBeVisible(swipe);
+		click(swipe);
+		lOGGER.info("Selecting SWIPE option from the list avalaible on home page");
 	}
 }
