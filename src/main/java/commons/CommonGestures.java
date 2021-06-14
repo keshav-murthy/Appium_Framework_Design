@@ -116,4 +116,17 @@ public class CommonGestures {
 			e.printStackTrace();
 		}
 	}
+
+	public void scrollOrSwipeLongPress(double sx, double sy, double ex, double ey) {
+
+		TouchAction action = new TouchAction(driver);
+		Dimension size = driver.manage().window().getSize();
+		int start_x = (int) (size.width * sx);
+		int start_y = (int) (size.height * sy);
+		int end_x = (int) (size.width * ex);
+		int end_y = (int) (size.height * ey);
+
+		action.longPress(PointOption.point(start_x, start_y)).waitAction(WaitOptions.waitOptions(Duration.ofSeconds(2)))
+				.moveTo(PointOption.point(end_x, end_y)).release().perform();
+	}
 }

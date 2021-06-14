@@ -1,11 +1,17 @@
 package listener;
 
 import java.io.File;
+import java.io.IOException;
+import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Date;
 import java.util.List;
 import java.util.Map;
 
+import org.apache.commons.io.FileUtils;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
+import org.openqa.selenium.WebDriver;
 import org.testng.IReporter;
 import org.testng.IResultMap;
 import org.testng.ISuite;
@@ -33,6 +39,7 @@ public class ExtentReporterNG implements IReporter {
 				buildTestNodes(context.getPassedTests(), LogStatus.PASS);
 				buildTestNodes(context.getFailedTests(), LogStatus.FAIL);
 				buildTestNodes(context.getSkippedTests(), LogStatus.SKIP);
+
 			}
 		}
 
@@ -58,11 +65,25 @@ public class ExtentReporterNG implements IReporter {
 				} else {
 					test.log(status, "Test " + status.toString().toLowerCase() + "ed");
 				}
-
+				String screenshotPath = "screenshots//";
+				test.log(LogStatus.FAIL, test.addScreenCapture(screenshotPath));
 				extent.endTest(test);
 			}
 		}
 	}
+
+//	public static String getScreenshot(WebDriver driver, String screenshotName) throws IOException {
+//		String dateName = new SimpleDateFormat("yyyyMMddhhmmss").format(new Date());
+//		TakesScreenshot ts = (TakesScreenshot) driver;
+//		File source = ts.getScreenshotAs(OutputType.FILE);
+//		// after execution, you could see a folder "FailedTestsScreenshots"
+//		// under src folder
+//		String destination = System.getProperty("user.dir") + "/FailedTestsScreenshots/" + screenshotName + dateName
+//				+ ".png";
+//		File finalDestination = new File(destination);
+//		FileUtils.copyFile(source, finalDestination);
+//		return destination;
+//	}
 
 	private Date getTime(long millis) {
 		Calendar calendar = Calendar.getInstance();

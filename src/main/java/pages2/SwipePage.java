@@ -4,7 +4,6 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
-import org.testng.Assert;
 
 import commons.CommonGestures;
 import io.appium.java_client.android.AndroidDriver;
@@ -13,12 +12,21 @@ public class SwipePage extends CommonGestures {
 
 	@FindBy(xpath = "//android.widget.Button[@text='SWIPEABLE (MINIMAL)']")
 	WebElement swipableMin;
-	
+
 	@FindBy(xpath = "//android.widget.Button[@text='SWIPEABLE (BASIC)']")
 	WebElement swipableBasic;
 
-	@FindBy(id = "com.touchboarder.android.api.demos:id/progress")
-	WebElement percentageDisplay;
+	@FindBy(xpath = "//android.widget.Button[@text='SWIPE ON LONG PRESS']")
+	WebElement swipableLongPress;
+
+	@FindBy(xpath = "//android.widget.Button[@text='BUTTON UNDER SWIPEABLE ITEM']")
+	WebElement buttonUnderSwipe;
+
+	@FindBy(xpath = "//android.widget.Button[@text='SWIPEABLE (VERTICAL)']")
+	WebElement verticalSwipable;
+
+	@FindBy(xpath = "//android.widget.Button[@text='SWIPEABLE WITH VIEWPAGER']")
+	WebElement viewPagerSwipable;
 
 	private static final Logger lOGGER = LogManager.getLogger(SwipePage.class.getName());
 
@@ -32,7 +40,7 @@ public class SwipePage extends CommonGestures {
 		click(swipableMin);
 		lOGGER.info("Selecting Swipable minimum from the list");
 	}
-	
+
 	public void selectSwipableBasic() {
 
 		wait.forElementToBeVisible(swipableBasic);
@@ -40,12 +48,31 @@ public class SwipePage extends CommonGestures {
 		lOGGER.info("Selecting Swipable basic from the list");
 	}
 
-	public void verifyProgress() {
+	public void selectSwipableLongPress() {
 
-		wait.forElementToBeVisible(percentageDisplay);
-		String display = percentageDisplay.getText();
-		display = display.substring(0, display.indexOf('f') - 1);
-		int display1=Integer.parseInt(display);
-		Assert.assertEquals(display1,55);
+		wait.forElementToBeVisible(swipableLongPress);
+		click(swipableLongPress);
+		lOGGER.info("Selecting Swipable Long Press from the list");
+	}
+
+	public void buttonUnderSwipable() {
+
+		wait.forElementToBeVisible(buttonUnderSwipe);
+		click(buttonUnderSwipe);
+		lOGGER.info("Selecting Button Under Swipe from the list");
+	}
+
+	public void verticalSwipable() {
+
+		wait.forElementToBeVisible(verticalSwipable);
+		click(verticalSwipable);
+		lOGGER.info("Selecting Vertical Swipable from the list");
+	}
+
+	public void viewPagerSwipable() {
+
+		wait.forElementToBeVisible(viewPagerSwipable);
+		click(viewPagerSwipable);
+		lOGGER.info("Selecting View Pager Swipable from the list");
 	}
 }
