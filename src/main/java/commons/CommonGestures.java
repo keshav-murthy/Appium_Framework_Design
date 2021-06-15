@@ -60,7 +60,8 @@ public class CommonGestures {
 	public void dragAndDrop(WebElement source, WebElement target) {
 
 		TouchAction action = new TouchAction(driver);
-		action.longPress(ElementOption.element(source)).moveTo(ElementOption.element(target)).release().perform();
+		action.longPress(ElementOption.element(source)).waitAction(WaitOptions.waitOptions(Duration.ofSeconds(2)))
+				.moveTo(ElementOption.element(target)).release().perform();
 	}
 
 	public void progressBar(WebElement source, int perc) {

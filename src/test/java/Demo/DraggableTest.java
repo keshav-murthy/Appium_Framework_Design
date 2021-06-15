@@ -7,14 +7,13 @@ import org.testng.annotations.Test;
 
 import commons.TestBase;
 import pages2.BasicDragPage;
+import pages2.DragOnCheckPage;
 import pages2.DragPage;
 import pages2.DraggableWithSectionPage;
-import pages2.HomePage;
+import pages2.GridDragPage;
 import pages2.LongPressDragPage;
 import pages2.MinimunDragPage;
-import pages2.SwipePage;
-import pages2.VerticalSwipablePage;
-import pages2.ViewPagerSwipablePage;
+import pages2.StaggeredGridDragPage;
 
 public class DraggableTest extends TestBase {
 
@@ -24,7 +23,7 @@ public class DraggableTest extends TestBase {
 				"com.h6ah4i.android.example.advrecyclerview.launcher.MainActivity");
 	}
 
-//	@Test(priority = 1)
+	@Test(priority = 1)
 	public void verifyMinDrag() {
 
 		DragPage drag = new DragPage(driver);
@@ -33,7 +32,7 @@ public class DraggableTest extends TestBase {
 		basic.dragItems();
 	}
 
-//	@Test(priority = 2)
+	@Test(priority = 2)
 	public void verifyBasicDrag() {
 
 		DragPage drag = new DragPage(driver);
@@ -42,7 +41,7 @@ public class DraggableTest extends TestBase {
 		min.dragItems();
 	}
 
-//	@Test(priority = 3)
+	@Test(priority = 3)
 	public void verifyLongPressSwipe() {
 
 		DragPage drag = new DragPage(driver);
@@ -52,7 +51,7 @@ public class DraggableTest extends TestBase {
 	}
 
 	@Test(priority = 4)
-	public void verifyButtonUnderSwipe() {
+	public void verifyDragInSections() {
 
 		DragPage drag = new DragPage(driver);
 		drag.draggableWithSection();
@@ -60,25 +59,30 @@ public class DraggableTest extends TestBase {
 		sec.dragItems();
 	}
 
-//	@Test(priority = 5)
-	public void verifyVerticalSwipable() {
+	@Test(priority = 5)
+	public void verifyDragOnCheck() {
 
-		HomePage home = new HomePage(driver);
-		home.clickOnSwipe();
-		SwipePage swipe = new SwipePage(driver);
-		swipe.verticalSwipable();
-		VerticalSwipablePage swipable = new VerticalSwipablePage(driver);
-		swipable.swipeItems();
+		DragPage drag = new DragPage(driver);
+		drag.dragOnCheckAndDrop();
+		DragOnCheckPage check = new DragOnCheckPage(driver);
+		check.dragItems();
 	}
 
-//	@Test(priority = 6)
-	public void verifyViewPagerSwipable() {
+	@Test(priority = 6)
+	public void verifyGridDrag() {
 
-		HomePage home = new HomePage(driver);
-		home.clickOnSwipe();
-		SwipePage swipe = new SwipePage(driver);
-		swipe.viewPagerSwipable();
-		ViewPagerSwipablePage swipable = new ViewPagerSwipablePage(driver);
-		swipable.swipeItems();
+		DragPage drag = new DragPage(driver);
+		drag.gridLayout();
+		GridDragPage grid = new GridDragPage(driver);
+		grid.dragItems();
+	}
+
+	@Test(priority = 7)
+	public void verifyStaggeredGridDrag() {
+
+		DragPage drag = new DragPage(driver);
+		drag.staggeredGridLayout();
+		StaggeredGridDragPage stag = new StaggeredGridDragPage(driver);
+		stag.dragItems();
 	}
 }
