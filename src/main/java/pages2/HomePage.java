@@ -11,11 +11,23 @@ import io.appium.java_client.android.AndroidDriver;
 public class HomePage extends CommonGestures {
 
 	@FindBy(xpath = "//android.widget.TextView[@text='API Demos']")
-	WebElement apiDemos;	
-	
+	WebElement apiDemos;
+
 	@FindBy(xpath = "//android.widget.TextView[@text='SWIPE']")
 	WebElement swipe;
-	
+
+	@FindBy(xpath = "//android.widget.TextView[@text='EXPAND']")
+	WebElement expand;
+
+	@FindBy(xpath = "//android.widget.TextView[@text='HEADER']")
+	WebElement header;
+
+	@FindBy(xpath = "//android.widget.TextView[@text='ADAPTER']")
+	WebElement adapter;
+
+	@FindBy(xpath = "//android.widget.TextView[@text='ADVANCED']")
+	WebElement advanced;
+
 	private static final Logger lOGGER = LogManager.getLogger(HomePage.class.getName());
 
 	public HomePage(AndroidDriver<WebElement> driver) {
@@ -28,11 +40,39 @@ public class HomePage extends CommonGestures {
 		click(apiDemos);
 		lOGGER.info("Selecting APIDemos option from the list avalaible on home page");
 	}
-	
+
 	public void clickOnSwipe() {
 
 		wait.forElementToBeVisible(swipe);
 		click(swipe);
-		lOGGER.info("Selecting SWIPE option from the list avalaible on home page");
+		lOGGER.info("Selecting swipe option from the list avalaible on home page");
+	}
+
+	public void clickOnExpand() {
+
+		wait.forElementToBeVisible(expand);
+		click(expand);
+		lOGGER.info("Selecting expand option from the list avalaible on home page");
+	}
+
+	public void clickOnHeader() {
+
+		wait.forElementToBeVisible(header);
+		click(header);
+		lOGGER.info("Selecting header option from the list avalaible on home page");
+	}
+
+	public void clickOnAdapter() {
+
+		wait.forElementToBeVisible(adapter);
+		click(adapter);
+		lOGGER.info("Selecting adapter option from the list avalaible on home page");
+	}
+
+	public void clickOnAdvanced() {
+
+		wait.forElementToBeVisible(advanced);
+		click(advanced);
+		lOGGER.info("Selecting advanced option from the list avalaible on home page");
 	}
 }
