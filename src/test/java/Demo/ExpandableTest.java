@@ -7,9 +7,8 @@ import org.testng.annotations.Test;
 
 import commons.TestBase;
 import pages2.AddOrRemovePage;
-import pages2.DragPage;
-import pages2.DraggableWithSectionPage;
 import pages2.ExpandBasicPage;
+import pages2.ExpandInGroupsPage;
 import pages2.ExpandMinPage;
 import pages2.ExpandPage;
 import pages2.HomePage;
@@ -44,7 +43,7 @@ public class ExpandableTest extends TestBase {
 		basic.expandItems();
 	}
 
-	@Test(priority = 3)
+//	@Test(priority = 3)
 	public void verifyAddOrRemove() {
 
 		HomePage home = new HomePage(driver);
@@ -55,14 +54,14 @@ public class ExpandableTest extends TestBase {
 		addRem.expandItems();
 	}
 
-//	@Test(priority = 4)
+	@Test(priority = 4)
 	public void verifyExpandInGroups() {
 
 		HomePage home = new HomePage(driver);
 		home.clickOnExpand();
-		DragPage drag = new DragPage(driver);
-		drag.draggableWithSection();
-		DraggableWithSectionPage sec = new DraggableWithSectionPage(driver);
-		sec.dragItems();
+		ExpandPage expand = new ExpandPage(driver);
+		expand.selectExpandInGroups();
+		ExpandInGroupsPage groups = new ExpandInGroupsPage(driver);
+		groups.expandItems();
 	}
 }
